@@ -1,0 +1,305 @@
+@import "compass/reset";
+
+@font-face{
+    font-family: Raleway; 
+    src: url(../fonts/ofont.ru_Raleway.ttf); 
+}
+ 
+$primary-colorGreen: #26AF76;
+$primary-colorOrange: #E7746F;
+html, body{
+    height: 100%;
+    font-family: Arial;
+    color: #333;   
+}
+
+.map {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+
+/* Базовый контейнер табов */
+.tabs {
+	min-width: 320px;
+	padding: 0px;
+	margin: 0 auto;
+	text-align: center;
+	input {
+	  	display: none;
+	  	border: none;
+	  	&:checked +label {
+			color: $primary-colorGreen;
+			border-bottom: 3px dashed $primary-colorGreen;
+		}
+	}
+	label {
+		display: inline-block;
+		margin: 0 0 -1px;
+		padding: 15px 25px;
+		text-align: center;
+		color: #aaa;
+		margin-bottom: 20px;
+		margin-left: 10px;
+		&:hover {
+		  	color: #888;
+		  	cursor: pointer;
+		}
+	}
+
+  
+}
+
+section {
+  display: none;
+  background: #fff;
+  
+}
+
+#content1,#content2{
+	display: none;
+}
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2 {
+  display: block;
+}
+
+.title{
+    margin-top:30px; 
+    font-size: 32px;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Raleway;
+    &__line{
+        margin: 30px auto 1px;
+        width: 70px;
+        background: rgba(135, 135, 135, 0.5);
+        height: 1px;
+    }
+    &__description{
+        width: 40%;
+        margin:0 auto;
+        color: #666;
+        font-size: 20px;
+        text-transform: none;
+        line-height: 30px;
+        font-weight: normal;
+    }
+}
+
+
+.section{
+	max-width: 1127px;
+	margin: 0 auto 30px;
+	overflow: hidden;
+	p{
+		padding: 5px;
+		i{
+			color: $primary-colorGreen;
+			font-size: 20px;
+			margin: 5px;
+		}
+	}
+}
+
+#sectionDark{
+    background-color: #333;
+    min-height: 200px;
+}
+
+.mainMenuWrap{
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    transition: background-color .3s linear;
+    position: fixed;
+    top:0px;
+    border-bottom: 1px solid #d3d3d3;
+    background-color: #fff;
+
+}
+.mainMenu{
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    font-family: Raleway;
+    line-height: 50px;
+    max-height: 65px;
+    a {
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+    }
+    &__item{
+        float: left;
+        padding: 10px 15px;
+        letter-spacing: 3px;   
+        margin: 0 10px;
+        max-height: 65px;
+        a{
+            color: #333;
+            text-decoration: none;  
+            &:hover{
+                color: $primary-colorOrange;
+            }
+        }
+        ul{
+            background: #333333;
+            transition: all .3s ease-in-out;
+            visibility: hidden;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+            text-transform: uppercase;
+            min-width: 170px;
+            font-family: Raleway;
+            li{
+                position: relative;
+                left: 0;
+                float: none;
+                height: auto;              
+            }
+        } 
+        &:hover > ul {
+            opacity: 1;
+            visibility: visible;
+            margin: 0;
+            z-index: 11;
+            }
+    }
+    &__active{
+        a{
+            color: $primary-colorGreen; 
+        }
+    }   
+}
+
+.nav{
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+    transition: top 1s ease-out 0.5s;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d3d3d3;
+    &__menuWrap{
+        margin: 0 auto;
+        width: 90%;
+    }
+    &__logo{
+        float: left;
+        font-size: 22px;
+        padding: 10px;
+        font-family: Raleway;
+    }
+}
+
+.menu{
+    text-transform: uppercase;
+    float: right;
+    display: inline-block;
+    font-size: 13px;
+    font-family: Raleway;
+    &__item{
+        float: left;
+        padding: 15px;
+        letter-spacing: 3px;
+        a{
+            color: #000;
+            text-decoration: none;
+            &:hover{
+                color: $primary-colorOrange;
+            }
+
+        }
+    }
+}
+
+.countsWrap{
+	text-align: center;
+	font-size: 22px;
+	font-family: Raleway;
+	max-width: 1127px;
+	margin: 10px auto;
+	&__counts{
+		border: 2px solid $primary-colorOrange;
+		border-radius: 50%;
+		width: 180px;
+		height: 180px;
+		display: inline-block;
+		margin-left: 20px;
+		p{
+			margin-top: 30px;
+			text-indent: 0px !important;
+			span{
+				font-size: 50px;
+				color: $primary-colorOrange;
+			}
+		}
+	}
+
+}
+
+.aboutWrap{
+	margin-top: 65px;
+	padding: 15px;
+	background-color: #f2f2f2;
+	font-family: Raleway;
+	font-size: 22px;
+	text-align: justify;
+	p{
+		text-indent: 40px;
+	}
+	&__sign{
+		margin: 30px 0;
+		text-align: right;
+    	font-style: italic;
+    }
+}
+
+.quotes{
+    text-align: right;
+    color: #646464;
+    padding: 10px;
+    margin: 20px;
+    border-right: 4px solid #d3d3d3;
+    line-height: 30px;
+    &__sign{
+
+    	font-style: italic;
+    	font-size: 16px;
+    }
+}
+
+
+.advantage{
+    padding: 30px 0;
+    width: 90%;
+    max-width: 260px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-bottom: 1px solid #d3d3d3;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    &__icon{
+        font-size: 50px;
+        color: $primary-colorOrange;
+    }
+    &__title{
+        font-weight: 300;
+        text-transform: uppercase;
+        padding: 10px;
+        margin-top: 15px;
+    }
+    &__text{
+        color: #666;
+        text-transform: none;
+        font-weight: normal;
+        padding: 10px;
+        margin: 10px 20px;
+        line-height: 25px;
+    }
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RealEstate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+   
+    <link href="stylesheets/animate.css" rel="stylesheet" media="screen">
+    <link href="stylesheets/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link href="stylesheets/styles.css" rel="stylesheet" media="screen">
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen">  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+    
+    <script src="javascripts/wow.min.js" type="text/javascript"></script>
+    <script src="javascripts/map.js" type="text/javascript"></script>
+    <script src="javascripts/demo.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.animateNumber.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script>new WOW().init();</script>
+    <script type="text/javascript">
+        google.maps.event.addDomListener(window, 'load', init);
+    </script>
+</head>
+<body>
+
+    <div class="mainMenuWrap">
+        <ul class="mainMenu">
+            <li class="mainMenu__item"><a href="#">О компании</a></li>
+            <li class="mainMenu__item"><a href="#">Услуги</a></li>
+            <li class="mainMenu__item"><a href="#">Новости</a></li>
+            <li class="mainMenu__item"><a href="#">Партнеры</a></li>
+            <li class="mainMenu__item"><a href="#">Лицензии</a></li>
+            <li class="mainMenu__item"><a href="#">контакты</a></li>
+        </ul>
+    </div>  
+
+<!---<div class = "nav" id = "header">
+    <div class = "nav__menuWrap">
+    <div class = "nav__logo"><p>Эколог</p></div>
+    <ul class = "menu">
+      <li class = "menu__item"><a href="#top">О компании</a></li>
+      <li class = "menu__item"><a href="#services">Услуги</a></li>
+      <li class = "menu__item"><a href="#works">Новости</a></li>
+      <li class = "menu__item"><a href="">Партнеры</a></li>
+      <li class = "menu__item"><a href="#clients">Лицензии</a></li>
+      <li class = "menu__item"><a href="#contacts">контакты</a></li>
+    </ul>
+    </div>
+  </div>
+-->
+
+<div class="container-fluid">
+    <div class="aboutWrap">
+        <div class = "title wow fadeInUp">
+            <h1>О компании</h1>
+            <div class = "title__line"></div>
+        </div>
+        <div class="row ">
+            <div class="col-md-2 col-xs-0"></div>
+            <div class="col-md-8 col-xs-12">
+                <div class = "quotes">
+                    <p>Людям все равно, сколько вы знаете, пока они не узнают, на сколько вам не все равно.</p>
+                    <p class = "quotes__sign">Теодор Рузвельт</p>
+                </div>
+                <p>У меня нет кумиров. Меня восхищает труд, преданность делу и профессионализм. Как-то один человек мне сказал, что я творю в профессии. Очень точно. Спасибо!</p>
+                <p>Решать Вам, но одно без сомнения: с нашей командой все ваши заботы отходят на второй план, не так ли?</p>
+                <p>Мы рады Вам. Добро пожаловать. </p>
+                <p>Качество, стремящееся к совершенству. День за днем эту философию воплощают наши сотрудники. Кроме очевидных качеств, как любовь к своему делу и креативность, нужно много терпения и умения общаться, а так же глубоко понимать все аспекты бизнеса и быть объективным.</p>
+                <p class="aboutWrap__sign">Директор ООО "Эколог", Булдыгина А.А.</p>
+            </div>
+            <div class="col-md-2 col-xs-0"></div>
+        </div>
+
+        <div class = "row " id="services">
+          <div class = "col-md-3 col-xs-12">
+              <div class = "advantage wow slideInLeft ">
+                <div class = "advantage__icon">
+                  <i class="fa fa-camera-retro"></i>
+                </div>
+                <div class = "advantage__title">WEB DESIGN</div>
+                <div class = "advantage__text">
+                  <p>Good things come to those who wait, but only the things left by those who hustle</p>
+                </div>
+              </div>
+          </div>
+            
+          <div class = "col-md-3 col-xs-12">
+              <div class = "advantage wow slideInLeft ">
+                <div class = "advantage__icon">
+                  <i class="fa fa-home"></i>
+                </div>
+                <div class = "advantage__title">WEB PROGRAMMING</div>
+                <div class = "advantage__text">
+                  <p>Good things come to those who wait, but only the things left by those who hustle</p>
+                </div>
+              </div>
+          </div>
+
+          <div class = "col-md-3 col-xs-12">
+              <div class = "advantage wow slideInRight ">
+                <div class = "advantage__icon">
+                  <i class="fa fa-glass"></i>
+                </div>
+                <div class = "advantage__title">BRANDING</div>
+                <div class = "advantage__text">
+                  <p>Good things come to those who wait, but only the things left by those who hustle</p>
+                </div>
+              </div>
+          </div>
+
+          <div class = "col-md-3 col-xs-12">
+              <div class = "advantage wow slideInRight ">
+                <div class = "advantage__icon">
+                  <i class="fa fa-glass"></i>
+                </div>
+                <div class = "advantage__title">CONSULTATION</div>
+                <div class = "advantage__text">
+                  <p>Good things come to those who wait, but only the things left by those who hustle</p>
+                </div>
+              </div>
+          </div>  
+        </div>
+
+        <div class="row countsWrap">
+            <div class="col-md-1 col-xs-0"></div>
+            <div class="col-md-3 col-xs-12">
+                <div class="countsWrap__counts wow fadeIn">
+                    <p>Более </br> <span id="fun-level1">0 </span></br>довольных клиентов.</p>
+                </div>
+            </div> 
+            <div class="col-md-4 col-xs-12">
+                <div class="countsWrap__counts wow fadeIn">
+                    <p>Более </br> <span id="fun-level2">0 </span> </br>лет на рынке.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <div class="countsWrap__counts wow fadeIn">
+                    <p></br><span id="fun-level3">0 %</span> </br> Сданных работ.</p>
+                </div>
+            </div>
+            <div class="col-md-1 col-xs-0"></div>
+        </div>
+    </div>
+
+</div>
+
+
+    <div class="tabs">
+        <div class = "title wow fadeInUp">
+            <h1>Контакты</h1>
+            <div class = "title__line"></div>
+        </div>
+        <input id="tab1" type="radio" name="tabs" checked onclick="init()">
+        <label for="tab1" title="Вкладка 1" class = "wow fadeInUp">Пенза</label>
+        <input id="tab2" type="radio" name="tabs" onclick="init()">
+        <label for="tab2" title="Вкладка 2" class = "wow fadeInUp">Кузнецк</label>
+        
+        <section id="content1">
+            <div id="map1" class = "map"></div>
+            <div class="section">
+                <div class="row" >
+                    <div class="col-sm-1 col-xs-0"></div>
+                    <div class="col-sm-5 col-xs-12 wow fadeInUp" > 
+                        <p class="title">Адрес : </p>
+                        <p ><i class="fa fa-home" aria-hidden="true"></i>440008, Россия, Пензенская область, г. Пенза, ул. Пушкина,7</p></div>
+                    <div class="col-sm-5 col-xs-12 wow fadeInUp" data-wow-delay=".2s">
+                        <p class="title">Телефон/факс : </p>
+                        <p > <i class="fa fa-phone" aria-hidden="true"></i>+7-902-353-80-25</p>
+                    </div>
+                    <div class="col-sm-1 col-xs-0"></div>
+                </div>
+                <div class="row" >
+                    <div class="col-sm-1 col-xs-0"></div>
+                    <div class="col-sm-5 col-xs-12 wow fadeInUp"data-wow-delay=".3s">
+                        <p class="title">Эл.почта (e-mail) :</p>
+                        <p > <i class="fa fa-envelope" aria-hidden="true"></i>oooqkol@sura.ru</p>
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i>a_buldygina@mail.ru</p>
+                    </div>
+                    <div class="col-sm-5 col-xs-12 wow fadeInUp" data-wow-delay=".4s">
+                         <p class="title">График работы :</p>
+                        <p ><i class="fa fa-clock-o" aria-hidden="true"></i>Понедельник-пятница : 8:30 - 17:00</p>
+                        <p ><i class="fa fa-clock-o" aria-hidden="true"></i>Перерыв на обед : 12:00 - 12:30</p>
+                </div>
+                <div class="col-sm-1 col-xs-0"></div>
+            </div>
+        </div>
+        </section>  
+        <section id="content2">
+            <div id="map" class = "map"></div>
+            <div class="section">
+                <div class="row" >
+                    <div class="col-md-1 col-xs-0"></div>
+                    <div class="col-md-5 col-xs-12 wow fadeInUp" >
+                        <p class="title">Адрес : </p>
+                        <p ><i class="fa fa-home" aria-hidden="true"></i>442530, Россия, Пензенская область, г. Кузнецк, ул. Кирова,157, 5 этаж, офис 514</p></div>
+                    <div class="col-md-5 col-xs-12 wow fadeInUp" data-wow-delay=".2s">
+                        <p class="title">Телефон/факс : </p>
+                        <p > <i class="fa fa-phone" aria-hidden="true"></i>(84157)3-38-09</p>
+                        <p > <i class="fa fa-phone" aria-hidden="true"></i>(84112)51-80-25</p>
+                    </div>
+                    <div class="col-md-1 col-xs-0"></div>
+                </div>
+                <div class="row" >
+                    <div class="col-md-1 col-xs-0"></div>
+                    <div class="col-md-5 col-xs-12 wow fadeInUp" data-wow-delay=".3s">
+                        <p class="title">Эл.почта (e-mail) :</p>
+                        <p ><i class="fa fa-envelope" aria-hidden="true"></i> oooqkol@sura.ru</p>
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i>a_buldygina@mail.ru</p>
+                    </div>
+                    <div class="col-md-5 col-xs-12 wow fadeInUp" data-wow-delay=".4s">
+                         <p class="title">График работы :</p>
+                        <p ><i class="fa fa-clock-o" aria-hidden="true"></i>Понедельник-рятница : 8:30 - 17:00</p>
+                        <p ><i class="fa fa-clock-o" aria-hidden="true"></i>Перерыв на обед : 12:00 - 12:30</p>
+                    </div>
+                    <div class="col-md-1 col-xs-0"></div>
+                </div> 
+            </div> 
+        </section>   
+    </div>
+ 
+    
+
+    <div class="container-fluid">
+        <div class="row" id="sectionDark">
+        <div class="col-md-12">
+            <p>ООО "Эколог"</p>
+        </div>
+    </div>     
+    </div>
+      
+</body>
+

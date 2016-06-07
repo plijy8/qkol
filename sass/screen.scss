@@ -80,9 +80,9 @@ section {
     }
     &__description{
         width: 40%;
-        margin:0 auto;
+        margin:5px auto;
         color: #666;
-        font-size: 20px;
+        font-size: 22px;
         text-transform: none;
         line-height: 30px;
         font-weight: normal;
@@ -222,7 +222,8 @@ section {
 	font-size: 22px;
 	font-family: Raleway;
 	max-width: 1127px;
-	margin: 10px auto;
+	margin: 20px auto;
+    overflow:hidden;
 	&__counts{
 		border: 2px solid $primary-colorOrange;
 		border-radius: 50%;
@@ -273,7 +274,9 @@ section {
     }
 }
 
-
+#advantage{
+    overflow: hidden;
+}
 .advantage{
     padding: 30px 0;
     width: 90%;
@@ -284,6 +287,7 @@ section {
     text-align: center;
     color: #000;
     font-size: 16px;
+    min-height: 280px;
     &__icon{
         font-size: 50px;
         color: $primary-colorOrange;
@@ -301,5 +305,9 @@ section {
         padding: 10px;
         margin: 10px 20px;
         line-height: 25px;
+
+    }
+    p{
+        text-indent: 0px !important;
     }
 }

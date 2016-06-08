@@ -269,6 +269,20 @@ html, body{
 
 /*++++++++++++ Блок Партнеры ++++++++++++*/
 
+.partners{
+    font-family: Raleway;
+    color: #333;
+    font-size: 18px;
+    padding-bottom: 30px;
+    &__item{
+        line-height: 28px;
+    }
+    i{
+        color: $primary-colorGreen;
+        margin-right: 10px;
+    }
+}
+
 /*++++++++++++ Блок Лицензии ++++++++++++*/
 
 .licenceWrap{

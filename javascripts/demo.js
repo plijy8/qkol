@@ -1,7 +1,6 @@
 $(document).ready(function(){
     
 
-
     var show = true;
     var countbox = ".countsWrap";
     $(window).on("scroll load resize", function(){
@@ -64,8 +63,7 @@ $(document).ready(function(){
     });
 
 
-
-
+  
 
     //липкое меню
 

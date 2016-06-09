@@ -7,7 +7,7 @@
  
 $primary-colorGreen: #26AF76;
 $primary-colorOrange: #E7746F;
-
+$primary-colorGreen2:#2fa49d;
 html, body{
     height: 100%;
     font-family: Arial;
@@ -134,7 +134,33 @@ html, body{
 }
 
 
-
+.Mypagination{
+    
+    color:#fff;
+    font-size: 19px;
+    text-align: center;
+    &__elem{
+        width: 50px;
+        height: 50px;
+        background-color: $primary-colorGreen2;
+        margin: 20px 5px;
+        display: inline-block;
+        transition:all .4s linear;
+        &_active{
+            background-color: #333;
+        }
+        a{
+            line-height: 50px;
+            text-decoration: none;
+            color: #fff;
+            background-color: transparent;
+            border: none;
+        }
+        &:hover{
+            background-color: #333;
+        }
+    }
+}
 
 /*+++++++++ Блок о компании ++++++++++ */
 
@@ -230,7 +256,7 @@ html, body{
         display: inline-block;
         margin-left: 20px;
         p{
-            margin-top: 30px;
+            margin-top: 20px;
             text-indent: 0px !important;
             span{
                 font-size: 50px;
@@ -262,8 +288,110 @@ html, body{
     background-color: #f2f2f2;
     font-family: Raleway;
     font-size: 22px;
-    text-align: justify;
+    text-align: center;
     overflow: hidden;
+    padding-bottom: 30px;
+}
+
+/* Анимированный бордер */
+.box {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background: rgba(255,255,255,1);
+    display: inline-table;
+    margin: 10px 10px;
+    cursor: pointer;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+     svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        line {
+            stroke-width: 2;
+            stroke: $primary-colorOrange;
+            fill: none;
+           -webkit-transition: all .5s;
+            transition: all .5s;
+        }
+
+        line.top,
+        line.bottom {
+            stroke-dasharray: 330 240; 
+        }
+
+        line.left,
+        line.right {
+            stroke-dasharray: 330 240;
+        }
+    }
+   
+    &:hover {
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+    }
+    &:hover svg line {
+        stroke-width: 10;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+    }
+}
+
+.box:hover svg line.top {
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+}
+
+.box:hover svg line.bottom {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+}
+
+ .box:hover svg line.left {
+    -webkit-transform: translateY(300px);
+    transform: translateY(300px);
+}
+
+.box:hover svg line.right {
+    -webkit-transform: translateY(-300px);
+    transform: translateY(-300px);
+}
+
+
+
+.news{
+display: block;
+    font-family: Raleway;
+    font-size: 22px;
+    &__date{
+        margin-top: 20px;
+        color: $primary-colorGreen;
+        text-align: center;
+    }
+    &__img{}
+    &__title{
+        font-size: 28px;
+        text-align: center;
+    }
+    &__btn{
+        background-color: $primary-colorOrange;
+        padding: 10px;
+        color: #fff;
+        width: 100px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        &:hover{
+            background-color:#BB5C58;
+        }
+    }
+    &__text{}
 }
 
 
@@ -281,6 +409,45 @@ html, body{
         color: $primary-colorGreen;
         margin-right: 10px;
     }
+}
+
+/* аккордеон  */
+.horizontal-click [name="vkl"] { display: none; }
+.horizontal-click > :not(input):not(label) {
+  overflow: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0 .5em;
+  border-top-style: none;
+  transition: .5s;
+}
+.horizontal-click > label {
+  overflow: hidden;
+  font-family: Raleway;
+  font-size: 22px;
+  display: block;
+  padding: .5em 1em;
+  background: #d3d3d3;
+  color: #333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  text-align: center;
+  line-height: 30px;
+  border-bottom: 1px solid #fff;
+  transition: .5s;
+  &:hover{
+    background: #AFADAD;
+  }
+}
+.horizontal-click > :checked + label + * {
+  overflow: auto;
+  height: 310px;
+}
+.horizontal-click > :checked + label {
+  background: $primary-colorGreen;
+  cursor: default;
+  color: white;
 }
 
 /*++++++++++++ Блок Лицензии ++++++++++++*/
@@ -310,7 +477,7 @@ html, body{
         position: absolute;
         top: -100%;
         left: 0px;
-        background: rgba(38,175,118,0.7);
+        background: rgba(38,175,118,0.8);
         width: 100%;
         height: 100%;
         color: #fff;
@@ -383,6 +550,8 @@ section {
 #tab2:checked ~ #content2 {
   display: block;
 }
+
+
 
 
 

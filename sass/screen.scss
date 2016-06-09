@@ -16,6 +16,39 @@ html, body{
 
 /*+++++++++++ Остальные стили +++++++++++++*/
 
+.fullscr{
+    background-image: url(../images/2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    text-align: center;
+    z-index: 4;
+    font-family: Raleway;
+    &__Overlay{
+        //background-image: url(../images/pattern.png);
+        background-color: rgba(44, 62, 80, 0.3);
+        z-index: 1;
+        background-repeat: repeat;
+        height: 100%;
+    }
+    &__intro{
+        width: 100%;
+        top:35%;    
+        color: #fff;
+        position: absolute;
+        &_big{
+            font-size: 100px;
+            padding: 15px;
+            text-transform: uppercase;
+        }
+        &_small{
+            font-size: 16px;
+            padding: 15px;
+        }
+    }
+}
+
+
 /* Заголовки */
 
 .title{
@@ -102,6 +135,12 @@ html, body{
                 color: $primary-colorOrange;
             }
         }
+        &_white{
+            color: white !important;
+             &:hover{
+                color: $primary-colorOrange !important;
+            }
+        }
         ul{
             background: #333333;
             transition: all .3s ease-in-out;
@@ -165,7 +204,7 @@ html, body{
 /*+++++++++ Блок о компании ++++++++++ */
 
 .aboutWrap{
-	margin-top: 65px;
+	//margin-top: 30px;
 	padding: 15px;
 	background-color: #f2f2f2;
 	font-family: Raleway;
@@ -552,9 +591,6 @@ section {
 #tab2:checked ~ #content2 {
   display: block;
 }
-
-
-
 
 
 

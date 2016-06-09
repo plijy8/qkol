@@ -13,6 +13,7 @@ $(document).ready(function(){
 
         var height = $(window).height();
         var HeaderTop = $('#mainMenu').offset().top;
+
         $(window).scroll(function(){
             if( $(window).scrollTop() > HeaderTop ) {
                 $('#mainMenu').addClass("mainMenuWrap") ;
@@ -22,6 +23,12 @@ $(document).ready(function(){
                $('#mainMenu').removeClass("mainMenuWrap");
                $(".mainMenu__item > a").addClass('mainMenu__item_white');
             
+            }
+            if( ($(window).scrollTop() ) > HeaderTop ) {
+                $('.topLink').css({visibility: 'visible'}); 
+            } 
+            else {
+                $('.topLink').css({visibility: 'hidden'});
             }
         });
 });

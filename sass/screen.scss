@@ -178,6 +178,7 @@ html, body{
     color:#fff;
     font-size: 19px;
     text-align: center;
+    margin-top: 30px;
     &__elem{
         width: 50px;
         height: 50px;
@@ -199,6 +200,31 @@ html, body{
             background-color: #333;
         }
     }
+}
+
+
+.topLink{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 3;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(17, 17, 17, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    transition:all 0.5s;
+    visibility: hidden;
+    &:hover{    
+        background-color: rgba(255, 255, 255, 0.8);
+        color: rgba(17, 17, 17, 0.8);
+    }
+    &:active, &:focus{
+        color: rgba(255, 255, 255, 0.8);  
+    }
+
 }
 
 /*+++++++++ Блок о компании ++++++++++ */

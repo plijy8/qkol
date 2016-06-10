@@ -361,7 +361,7 @@ html, body{
 
 /* Анимированный бордер */
 .box {
-    width: 300px;
+    width: 260px;
     height: 300px;
     position: relative;
     background: rgba(255,255,255,1);
@@ -385,7 +385,7 @@ html, body{
 
         line.top,
         line.bottom {
-            stroke-dasharray: 330 240; 
+            stroke-dasharray: 290 200; 
         }
 
         line.left,
@@ -406,13 +406,13 @@ html, body{
 }
 
 .box:hover svg line.top {
-    -webkit-transform: translateX(-300px);
-    transform: translateX(-300px);
+    -webkit-transform: translateX(-260px);
+    transform: translateX(-260px);
 }
 
 .box:hover svg line.bottom {
-    -webkit-transform: translateX(300px);
-    transform: translateX(300px);
+    -webkit-transform: translateX(260px);
+    transform: translateX(260px);
 }
 
  .box:hover svg line.left {
@@ -438,7 +438,8 @@ display: block;
     }
     &__img{}
     &__title{
-        font-size: 28px;
+        padding: 10px;
+        font-size: 23px;
         text-align: center;
     }
     &__btn{

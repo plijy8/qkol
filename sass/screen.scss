@@ -8,6 +8,9 @@
 $primary-colorGreen: #26AF76;
 $primary-colorOrange: #E7746F;
 $primary-colorGreen2:#2fa49d;
+
+$fontColor: #1c0f04;
+
 html, body{
     height: 100%;
     font-family: Arial;
@@ -83,7 +86,7 @@ html, body{
 	p{
 		padding: 5px;
 		i{
-			color: $primary-colorGreen;
+			color: rgba(194,156,109,.8);
 			font-size: 20px;
 			margin: 5px;
 		}
@@ -91,8 +94,14 @@ html, body{
 }
 
 #sectionDark{
-    background-color: #333;
+    background-color: $fontColor;
     min-height: 200px;
+    text-align: center;
+    p{
+        color: rgb(194,156,109);
+        line-height: 200px;
+
+    }
 }
 
 
@@ -153,7 +162,7 @@ html, body{
         margin: 0 10px;
         max-height: 65px;
         a{
-            color: #333;
+            color: $fontColor;
             font-weight: 100;
             text-decoration: none;  
             &:hover{
@@ -168,7 +177,7 @@ html, body{
             }
         }
         ul{
-            background: #333333;
+            background: $fontColor;
             transition: all .3s ease-in-out;
             visibility: hidden;
             padding: 10px;
@@ -213,7 +222,7 @@ html, body{
         display: inline-block;
         transition:all .4s linear;
         &_active{
-            background-color: #333;
+            background-color: $fontColor;
         }
         a{
             line-height: 50px;
@@ -223,7 +232,7 @@ html, body{
             border: none;
         }
         &:hover{
-            background-color: #333;
+            background-color: $fontColor;
         }
     }
 }
@@ -303,7 +312,7 @@ html, body{
     min-height: 280px;
     &__icon{
         font-size: 50px;
-        color: $primary-colorGreen;
+        color: rgba(194,156,109,.3);
     }
     &__title{
         font-weight: 300;
@@ -325,7 +334,7 @@ html, body{
         text-indent: 0px !important;
     }
     &:hover>.advantage__icon{
-        color: $primary-colorOrange;
+        color: rgba(194,156,109,.6);
     }
 }
 
@@ -340,7 +349,7 @@ html, body{
     margin: 20px auto;
     overflow:hidden;
     &__counts{
-        border: 2px solid $primary-colorOrange;
+        border: 2px solid #835c39;
         border-radius: 50%;
         width: 180px;
         height: 180px;
@@ -351,7 +360,7 @@ html, body{
             text-indent: 0px !important;
             span{
                 font-size: 50px;
-                color: $primary-colorOrange;
+                color: #835c39;
             }
         }
     }
@@ -361,14 +370,14 @@ html, body{
 /*++++++++++++ Блок Услуги ++++++++++++*/
 .services{
     font-family: Raleway;
-    color: #333;
+    color: $fontColor;
     font-size: 22px;
     padding-bottom: 30px;
     &__item{
         line-height: 32px;
     }
     i{
-        color: $primary-colorGreen;
+        color: rgba(194,156,109,.8);
         margin-right: 10px;
     }
 }
@@ -461,7 +470,7 @@ html, body{
     &__item{
         line-height: 32px;
         a{
-            color:#333;
+            color:$fontColor;
             text-decoration: none;
             &:hover {
                 color:$primary-colorOrange;
@@ -470,7 +479,7 @@ html, body{
 
     }
     i{
-        color: $primary-colorGreen;
+        color: rgba(194,156,109,.8);
         margin-right: 10px;
     }
 
@@ -478,15 +487,21 @@ html, body{
 
 /*++++++++++++ Блок Партнеры ++++++++++++*/
 
-.partners{
+.partnersWrap{
     background-color: #f2f2f2;
     font-family: Raleway;
-    color: #333;
+    color: $fontColor;
     font-size: 20px;
     padding-bottom: 30px;
-    text-align: center;
+}
+
+.partners{
+    
+    max-width: 700px;
+    margin: 0 auto;
     &__item{
         line-height: 28px;
+        list-style-type: circle;
            i{
         color: $primary-colorGreen;
         margin-right: 10px;
@@ -514,7 +529,7 @@ html, body{
   font-size: 23px;
   display: block;
   padding: .5em 1em;
-  background: #f6e8e8;
+  background: rgba(194,156,109,.1);
   color: #333;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -530,7 +545,7 @@ html, body{
     font-size: 25px;
   }
   &:hover{
-    color: $primary-colorGreen;
+    color: rgb(131,92,57);
   }
 }
 .horizontal-click > :checked + label + * {
@@ -538,7 +553,7 @@ html, body{
   height: 450px;
 }
 .horizontal-click > :checked + label {
-  background: $primary-colorGreen;
+  background: rgba(194,156,109,.4);
   cursor: default;
   color: white;
 }
@@ -564,28 +579,25 @@ html, body{
 
 .eff-1-1 {
     max-width: 450px;
+    max-height: 330px;
     margin: 10px auto;
     overflow: hidden;
     .caption {
         position: absolute;
-        top: -100%;
-        left: 0px;
-        background: rgba(38,175,118,0.8);
+        opacity: 0;
+        top: 0px;
+        line-height: 330px;
         width: 100%;
-        height: 100%;
-        color: #fff;
-        -o-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
-        -moz-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
-        -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
-        -ms-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
-        transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+        vertical-align: middle;
+        transition: all .3s linear;
         i{
             position: relative;
             top:48%;
         }
     }
     &:hover .caption {
-         top: 0px;
+         opacity: 1;
+         background-color: rgba(255,255,255,.6);
     }
 }
 
@@ -609,8 +621,8 @@ html, body{
         display: none;
         border: none;
         &:checked +label {
-            color: $primary-colorGreen;
-            border-bottom: 3px dashed $primary-colorGreen;
+            color: rgba(194,156,109,.8);
+            border-bottom: 3px dashed rgba(194,156,109,.8);
         }
     }
     label {
@@ -698,14 +710,14 @@ section {
         position: fixed;
         top:0px;
         width: 100%;
-        color:#333;
+        color:$fontColor;
         &__item{
             float: none;
             background-color: #fff;
             line-height: 30px;
             border-bottom:1px solid #f6e8e8;
             a{
-                color:#333 !important;
+                color:$fontColor !important;
 
             }
         }

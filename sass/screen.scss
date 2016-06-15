@@ -17,7 +17,7 @@ html, body{
 /*+++++++++++ Остальные стили +++++++++++++*/
 
 .fullscr{
-    background-image: url(../images/2.jpeg);
+    background-image: url(../images/factory2.jpeg);
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
@@ -26,7 +26,7 @@ html, body{
     font-family: Raleway;
     &__Overlay{
         //background-image: url(../images/pattern.png);
-        background-color: rgba(44, 62, 80, 0.3);
+        //background-color: rgba(44, 62, 80, 0.4);
         z-index: 1;
         background-repeat: repeat;
         height: 100%;
@@ -65,7 +65,7 @@ html, body{
         height: 1px;
     }
     &__description{
-        width: 40%;
+        width: 50%;
         margin:5px auto;
         color: #666;
         font-size: 22px;
@@ -109,6 +109,30 @@ html, body{
     background-color: #fff;
 
 }
+
+#touch-menu {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    z-index: 1;
+    transition: all.3s linear;
+    &:hover, &:active{
+        color: $primary-colorGreen;
+        background-color: transparent;
+    }
+
+}
+
+.activeMenu{
+    color: $primary-colorGreen !important;
+    background-color: transparent !important;
+}
 .mainMenu{
     text-transform: uppercase;
     display: inline-block;
@@ -130,6 +154,7 @@ html, body{
         max-height: 65px;
         a{
             color: #333;
+            font-weight: 100;
             text-decoration: none;  
             &:hover{
                 color: $primary-colorOrange;
@@ -137,6 +162,7 @@ html, body{
         }
         &_white{
             color: white !important;
+            font-weight: 600 !important;
              &:hover{
                 color: $primary-colorOrange !important;
             }
@@ -266,10 +292,9 @@ html, body{
     overflow: hidden;
 }
 .advantage{
-    padding: 30px 0;
-    width: 90%;
+    padding: 30px 0 0;
     max-width: 260px;
-    margin: 20px auto;
+    margin: 30px auto;
     background-color: #fff;
     border-bottom: 1px solid #d3d3d3;
     text-align: center;
@@ -351,14 +376,17 @@ html, body{
 
 /*++++++++++++ Блок Новости ++++++++++++*/
 .newsWrap{
-    background-color: #f2f2f2;
+ 
+    margin: 0 auto;
     font-family: Raleway;
     font-size: 22px;
-    text-align: center;
+    text-align: left;
     overflow: hidden;
     padding-bottom: 30px;
 }
-
+#news{
+    
+}
 /* Анимированный бордер */
 .box {
     width: 260px;
@@ -368,8 +396,6 @@ html, body{
     display: inline-table;
     margin: 10px 10px;
     cursor: pointer;
-    -webkit-transition: background 0.3s;
-    transition: background 0.3s;
      svg {
         position: absolute;
         top: 0;
@@ -428,43 +454,32 @@ html, body{
 
 
 .news{
-display: block;
     font-family: Raleway;
+    color: #333;
     font-size: 22px;
-    &__date{
-        margin-top: 20px;
-        color: $primary-colorGreen;
-        text-align: center;
-    }
-    &__img{}
-    &__title{
-        padding: 10px;
-        font-size: 23px;
-        text-align: center;
-    }
-    &__btn{
-        background-color: $primary-colorOrange;
-        padding: 10px;
-        color: #fff;
-        width: 100px;
-        position: absolute;
-        right: 10px;
-        bottom: 10px;
+    padding-bottom: 30px;
+    &__item{
+        line-height: 32px;
         a{
-            color: white;
+            color:#333;
             text-decoration: none;
+            &:hover {
+                color:$primary-colorOrange;
+            }
         }
-        &:hover{
-            background-color:#BB5C58;
-        }
-    }
-    &__text{}
-}
 
+    }
+    i{
+        color: $primary-colorGreen;
+        margin-right: 10px;
+    }
+
+}
 
 /*++++++++++++ Блок Партнеры ++++++++++++*/
 
 .partners{
+    background-color: #f2f2f2;
     font-family: Raleway;
     color: #333;
     font-size: 20px;
@@ -472,12 +487,14 @@ display: block;
     text-align: center;
     &__item{
         line-height: 28px;
-    }
-    i{
+           i{
         color: $primary-colorGreen;
         margin-right: 10px;
     }
+    }
+ 
 }
+
 
 /* аккордеон  */
 .horizontal-click [name="vkl"] { display: none; }
@@ -488,14 +505,16 @@ display: block;
   padding: 0 .5em;
   border-top-style: none;
   transition: .5s;
+  width: 80%;
+  margin: 0 auto;
 }
 .horizontal-click > label {
   overflow: hidden;
   font-family: Raleway;
-  font-size: 22px;
+  font-size: 23px;
   display: block;
   padding: .5em 1em;
-  background: #d3d3d3;
+  background: #f6e8e8;
   color: #333;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -504,8 +523,14 @@ display: block;
   line-height: 30px;
   border-bottom: 1px solid #fff;
   transition: .5s;
+  margin: 0 auto;
+  width: 80%;
+  i{
+    margin-right: 10px;
+    font-size: 25px;
+  }
   &:hover{
-    background: #AFADAD;
+    color: $primary-colorGreen;
   }
 }
 .horizontal-click > :checked + label + * {
@@ -620,4 +645,138 @@ section {
 }
 
 
+
+@media screen and (max-width: 1110px) {
+    .advantage__title {
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (max-width: 1060px) {
+    .mainMenu__item {
+        a{
+            font-size: 16px;    
+        }       
+    }
+    .advantage__title {
+        padding: 10px 0 ;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .my-col-sm {
+       width: 50%;
+        
+    }
+    .mainMenu__item_white {  
+            font-weight: 100 !important;   
+    }
+    #advantage{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .mainMenu__item {  
+            margin: 0;  
+    }
+}
+
+/* TODO */
+
+@media (max-width: 787px) {
+    #advantage{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .mainMenu {
+        display: none;
+        position: fixed;
+        top:0px;
+        width: 100%;
+        color:#333;
+        &__item{
+            float: none;
+            background-color: #fff;
+            line-height: 30px;
+            border-bottom:1px solid #f6e8e8;
+            a{
+                color:#333 !important;
+
+            }
+        }
+    }
+    
+    .nav li:first-child a {border-top: none;}
+    #touch-menu {display: block;}
+}
+
+@media screen and (max-width: 767px) {
+    .countsWrap__counts{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .title__description{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .Mypagination__elem {
+       width: 40px;
+       height: 40px;
+    
+        a{
+            line-height: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .my-col-sm {
+       width: 100%;  
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .Mypagination__elem {
+       margin: 20px 3px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .fullscr__intro_big{
+        font-size: 80px;
+    } 
+
+    .quotes{
+        margin: 20px auto;
+    } 
+}
+
+
+@media screen and (max-width: 360px) {
+    .title__description{
+        width: 100%;
+    }
+    .fullscr__intro_big{
+        font-size: 70px;
+    }  
+    .Mypagination__elem {
+       width: 25px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .Mypagination__elem {
+       width: 20px;
+    }
+}
 

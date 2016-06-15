@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -75,10 +75,10 @@ html, body {
   color: #333;
 }
 
-/*+++++++++++ ╨Ю╤Б╤В╨░╨╗╤М╨╜╤Л╨╡ ╤Б╤В╨╕╨╗╨╕ +++++++++++++*/
+/*+++++++++++ Остальные стили +++++++++++++*/
 /* line 19, ../sass/screen.scss */
 .fullscr {
-  background-image: url(../images/2.jpeg);
+  background-image: url(../images/factory2.jpeg);
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
@@ -88,7 +88,6 @@ html, body {
 }
 /* line 27, ../sass/screen.scss */
 .fullscr__Overlay {
-  background-color: rgba(44, 62, 80, 0.3);
   z-index: 1;
   background-repeat: repeat;
   height: 100%;
@@ -112,7 +111,7 @@ html, body {
   padding: 15px;
 }
 
-/* ╨Ч╨░╨│╨╛╨╗╨╛╨▓╨║╨╕ */
+/* Заголовки */
 /* line 54, ../sass/screen.scss */
 .title {
   margin-top: 30px;
@@ -131,7 +130,7 @@ html, body {
 }
 /* line 67, ../sass/screen.scss */
 .title__description {
-  width: 40%;
+  width: 50%;
   margin: 5px auto;
   color: #666;
   font-size: 22px;
@@ -163,7 +162,7 @@ html, body {
   min-height: 200px;
 }
 
-/* ╨Ь╨╡╨╜╤О */
+/* Меню */
 /* line 101, ../sass/screen.scss */
 .mainMenuWrap {
   width: 100%;
@@ -176,7 +175,33 @@ html, body {
   background-color: #fff;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
+#touch-menu {
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 25px;
+  color: #fff;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 1;
+  transition: all 0.3s linear;
+}
+/* line 125, ../sass/screen.scss */
+#touch-menu:hover, #touch-menu:active {
+  color: #26AF76;
+  background-color: transparent;
+}
+
+/* line 132, ../sass/screen.scss */
+.activeMenu {
+  color: #26AF76 !important;
+  background-color: transparent !important;
+}
+
+/* line 136, ../sass/screen.scss */
 .mainMenu {
   text-transform: uppercase;
   display: inline-block;
@@ -186,13 +211,13 @@ html, body {
   line-height: 50px;
   max-height: 65px;
 }
-/* line 120, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .mainMenu a {
   text-decoration: none;
   display: inline-block;
   position: relative;
 }
-/* line 125, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 .mainMenu__item {
   float: left;
   padding: 10px 15px;
@@ -200,24 +225,26 @@ html, body {
   margin: 0 10px;
   max-height: 65px;
 }
-/* line 131, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .mainMenu__item a {
   color: #333;
+  font-weight: 100;
   text-decoration: none;
 }
-/* line 134, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .mainMenu__item a:hover {
   color: #E7746F;
 }
-/* line 138, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .mainMenu__item_white {
   color: white !important;
+  font-weight: 600 !important;
 }
-/* line 140, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 .mainMenu__item_white:hover {
   color: #E7746F !important;
 }
-/* line 144, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .mainMenu__item ul {
   background: #333333;
   transition: all .3s ease-in-out;
@@ -229,33 +256,33 @@ html, body {
   min-width: 170px;
   font-family: Raleway;
 }
-/* line 154, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .mainMenu__item ul li {
   position: relative;
   left: 0;
   float: none;
   height: auto;
 }
-/* line 161, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 .mainMenu__item:hover > ul {
   opacity: 1;
   visibility: visible;
   margin: 0;
   z-index: 11;
 }
-/* line 169, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .mainMenu__active a {
   color: #26AF76;
 }
 
-/* line 176, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 .Mypagination {
   color: #fff;
   font-size: 19px;
   text-align: center;
   margin-top: 30px;
 }
-/* line 182, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 .Mypagination__elem {
   width: 50px;
   height: 50px;
@@ -264,11 +291,11 @@ html, body {
   display: inline-block;
   transition: all .4s linear;
 }
-/* line 189, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .Mypagination__elem_active {
   background-color: #333;
 }
-/* line 192, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .Mypagination__elem a {
   line-height: 50px;
   text-decoration: none;
@@ -276,12 +303,12 @@ html, body {
   background-color: transparent;
   border: none;
 }
-/* line 199, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .Mypagination__elem:hover {
   background-color: #333;
 }
 
-/* line 206, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 .topLink {
   width: 40px;
   height: 40px;
@@ -297,18 +324,18 @@ html, body {
   transition: all 0.5s;
   visibility: hidden;
 }
-/* line 220, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 .topLink:hover {
   background-color: rgba(255, 255, 255, 0.8);
   color: rgba(17, 17, 17, 0.8);
 }
-/* line 224, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .topLink:active, .topLink:focus {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/*+++++++++ ╨С╨╗╨╛╨║ ╨╛ ╨║╨╛╨╝╨┐╨░╨╜╨╕╨╕ ++++++++++ */
-/* line 232, ../sass/screen.scss */
+/*+++++++++ Блок о компании ++++++++++ */
+/* line 258, ../sass/screen.scss */
 .aboutWrap {
   padding: 15px;
   background-color: #f2f2f2;
@@ -317,19 +344,19 @@ html, body {
   text-align: justify;
   overflow: hidden;
 }
-/* line 240, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 .aboutWrap p {
   text-indent: 40px;
 }
-/* line 243, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .aboutWrap__sign {
   margin: 30px 0;
   text-align: right;
   font-style: italic;
 }
 
-/* ╨Ъ╨░╨▓╤Л╤З╨║╨╕ */
-/* line 251, ../sass/screen.scss */
+/* Кавычки */
+/* line 277, ../sass/screen.scss */
 .quotes {
   text-align: right;
   color: #646464;
@@ -338,23 +365,22 @@ html, body {
   border-right: 4px solid #d3d3d3;
   line-height: 30px;
 }
-/* line 258, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .quotes__sign {
   font-style: italic;
   font-size: 16px;
 }
 
-/* line 265, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 #advantage {
   overflow: hidden;
 }
 
-/* line 268, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 .advantage {
-  padding: 30px 0;
-  width: 90%;
+  padding: 30px 0 0;
   max-width: 260px;
-  margin: 20px auto;
+  margin: 30px auto;
   background-color: #fff;
   border-bottom: 1px solid #d3d3d3;
   text-align: center;
@@ -362,19 +388,19 @@ html, body {
   font-size: 16px;
   min-height: 280px;
 }
-/* line 279, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 .advantage__icon {
   font-size: 50px;
   color: #26AF76;
 }
-/* line 283, ../sass/screen.scss */
+/* line 308, ../sass/screen.scss */
 .advantage__title {
   font-weight: 300;
   text-transform: uppercase;
   padding: 10px;
   margin-top: 15px;
 }
-/* line 289, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 .advantage__text {
   font-size: 19px;
   color: #666;
@@ -384,17 +410,17 @@ html, body {
   margin: 10px 10px;
   line-height: 25px;
 }
-/* line 299, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 .advantage p {
   text-indent: 0px !important;
 }
-/* line 302, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 .advantage:hover > .advantage__icon {
   color: #E7746F;
 }
 
-/* ╨Р╨╜╨╕╨╝╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╡ ╤Ж╨╕╤Д╤А╤Л */
-/* line 310, ../sass/screen.scss */
+/* Анимированные цифры */
+/* line 335, ../sass/screen.scss */
 .countsWrap {
   text-align: center;
   font-size: 22px;
@@ -403,7 +429,7 @@ html, body {
   margin: 20px auto;
   overflow: hidden;
 }
-/* line 317, ../sass/screen.scss */
+/* line 342, ../sass/screen.scss */
 .countsWrap__counts {
   border: 2px solid #E7746F;
   border-radius: 50%;
@@ -412,48 +438,48 @@ html, body {
   display: inline-block;
   margin-left: 20px;
 }
-/* line 324, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 .countsWrap__counts p {
   margin-top: 20px;
   text-indent: 0px !important;
 }
-/* line 327, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 .countsWrap__counts p span {
   font-size: 50px;
   color: #E7746F;
 }
 
-/*++++++++++++ ╨С╨╗╨╛╨║ ╨г╤Б╨╗╤Г╨│╨╕ ++++++++++++*/
-/* line 337, ../sass/screen.scss */
+/*++++++++++++ Блок Услуги ++++++++++++*/
+/* line 362, ../sass/screen.scss */
 .services {
   font-family: Raleway;
   color: #333;
   font-size: 22px;
   padding-bottom: 30px;
 }
-/* line 342, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 .services__item {
   line-height: 32px;
 }
-/* line 345, ../sass/screen.scss */
+/* line 370, ../sass/screen.scss */
 .services i {
   color: #26AF76;
   margin-right: 10px;
 }
 
-/*++++++++++++ ╨С╨╗╨╛╨║ ╨Э╨╛╨▓╨╛╤Б╤В╨╕ ++++++++++++*/
-/* line 353, ../sass/screen.scss */
+/*++++++++++++ Блок Новости ++++++++++++*/
+/* line 378, ../sass/screen.scss */
 .newsWrap {
-  background-color: #f2f2f2;
+  margin: 0 auto;
   font-family: Raleway;
   font-size: 22px;
-  text-align: center;
+  text-align: left;
   overflow: hidden;
   padding-bottom: 30px;
 }
 
-/* ╨Р╨╜╨╕╨╝╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▒╨╛╤А╨┤╨╡╤А */
-/* line 363, ../sass/screen.scss */
+/* Анимированный бордер */
+/* line 391, ../sass/screen.scss */
 .box {
   width: 260px;
   height: 300px;
@@ -462,16 +488,14 @@ html, body {
   display: inline-table;
   margin: 10px 10px;
   cursor: pointer;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
 }
-/* line 373, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 .box svg {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 378, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 .box svg line {
   stroke-width: 2;
   stroke: #E7746F;
@@ -479,116 +503,105 @@ html, body {
   -webkit-transition: all .5s;
   transition: all .5s;
 }
-/* line 386, ../sass/screen.scss */
+/* line 412, ../sass/screen.scss */
 .box svg line.top,
 .box svg line.bottom {
   stroke-dasharray: 290 200;
 }
-/* line 391, ../sass/screen.scss */
+/* line 417, ../sass/screen.scss */
 .box svg line.left,
 .box svg line.right {
   stroke-dasharray: 330 240;
 }
-/* line 397, ../sass/screen.scss */
+/* line 423, ../sass/screen.scss */
 .box:hover {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
-/* line 401, ../sass/screen.scss */
+/* line 427, ../sass/screen.scss */
 .box:hover svg line {
   stroke-width: 10;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
-/* line 408, ../sass/screen.scss */
+/* line 434, ../sass/screen.scss */
 .box:hover svg line.top {
   -webkit-transform: translateX(-260px);
   transform: translateX(-260px);
 }
 
-/* line 413, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 .box:hover svg line.bottom {
   -webkit-transform: translateX(260px);
   transform: translateX(260px);
 }
 
-/* line 418, ../sass/screen.scss */
+/* line 444, ../sass/screen.scss */
 .box:hover svg line.left {
   -webkit-transform: translateY(300px);
   transform: translateY(300px);
 }
 
-/* line 423, ../sass/screen.scss */
+/* line 449, ../sass/screen.scss */
 .box:hover svg line.right {
   -webkit-transform: translateY(-300px);
   transform: translateY(-300px);
 }
 
-/* line 430, ../sass/screen.scss */
+/* line 456, ../sass/screen.scss */
 .news {
-  display: block;
   font-family: Raleway;
+  color: #333;
   font-size: 22px;
+  padding-bottom: 30px;
 }
-/* line 434, ../sass/screen.scss */
-.news__date {
-  margin-top: 20px;
-  color: #26AF76;
-  text-align: center;
+/* line 461, ../sass/screen.scss */
+.news__item {
+  line-height: 32px;
 }
-/* line 440, ../sass/screen.scss */
-.news__title {
-  padding: 10px;
-  font-size: 23px;
-  text-align: center;
-}
-/* line 445, ../sass/screen.scss */
-.news__btn {
-  background-color: #E7746F;
-  padding: 10px;
-  color: #fff;
-  width: 100px;
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-}
-/* line 453, ../sass/screen.scss */
-.news__btn a {
-  color: white;
+/* line 463, ../sass/screen.scss */
+.news__item a {
+  color: #333;
   text-decoration: none;
 }
-/* line 457, ../sass/screen.scss */
-.news__btn:hover {
-  background-color: #BB5C58;
+/* line 466, ../sass/screen.scss */
+.news__item a:hover {
+  color: #E7746F;
+}
+/* line 472, ../sass/screen.scss */
+.news i {
+  color: #26AF76;
+  margin-right: 10px;
 }
 
-/*++++++++++++ ╨С╨╗╨╛╨║ ╨Я╨░╤А╤В╨╜╨╡╤А╤Л ++++++++++++*/
-/* line 467, ../sass/screen.scss */
+/*++++++++++++ Блок Партнеры ++++++++++++*/
+/* line 481, ../sass/screen.scss */
 .partners {
+  background-color: #f2f2f2;
   font-family: Raleway;
   color: #333;
   font-size: 20px;
   padding-bottom: 30px;
   text-align: center;
 }
-/* line 473, ../sass/screen.scss */
+/* line 488, ../sass/screen.scss */
 .partners__item {
   line-height: 28px;
 }
-/* line 476, ../sass/screen.scss */
-.partners i {
+/* line 490, ../sass/screen.scss */
+.partners__item i {
   color: #26AF76;
   margin-right: 10px;
 }
 
-/* ╨░╨║╨║╨╛╤А╨┤╨╡╨╛╨╜  */
-/* line 483, ../sass/screen.scss */
+/* аккордеон  */
+/* line 500, ../sass/screen.scss */
 .horizontal-click [name="vkl"] {
   display: none;
 }
 
-/* line 484, ../sass/screen.scss */
+/* line 501, ../sass/screen.scss */
 .horizontal-click > :not(input):not(label) {
   overflow: hidden;
   height: 0;
@@ -596,16 +609,18 @@ html, body {
   padding: 0 .5em;
   border-top-style: none;
   transition: .5s;
+  width: 80%;
+  margin: 0 auto;
 }
 
-/* line 492, ../sass/screen.scss */
+/* line 511, ../sass/screen.scss */
 .horizontal-click > label {
   overflow: hidden;
   font-family: Raleway;
-  font-size: 22px;
+  font-size: 23px;
   display: block;
   padding: .5em 1em;
-  background: #d3d3d3;
+  background: #f6e8e8;
   color: #333;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -614,27 +629,34 @@ html, body {
   line-height: 30px;
   border-bottom: 1px solid #fff;
   transition: .5s;
+  margin: 0 auto;
+  width: 80%;
 }
-/* line 507, ../sass/screen.scss */
+/* line 528, ../sass/screen.scss */
+.horizontal-click > label i {
+  margin-right: 10px;
+  font-size: 25px;
+}
+/* line 532, ../sass/screen.scss */
 .horizontal-click > label:hover {
-  background: #AFADAD;
+  color: #26AF76;
 }
 
-/* line 511, ../sass/screen.scss */
+/* line 536, ../sass/screen.scss */
 .horizontal-click > :checked + label + * {
   overflow: auto;
   height: 450px;
 }
 
-/* line 515, ../sass/screen.scss */
+/* line 540, ../sass/screen.scss */
 .horizontal-click > :checked + label {
   background: #26AF76;
   cursor: default;
   color: white;
 }
 
-/*++++++++++++ ╨С╨╗╨╛╨║ ╨Ы╨╕╤Ж╨╡╨╜╨╖╨╕╨╕ ++++++++++++*/
-/* line 523, ../sass/screen.scss */
+/*++++++++++++ Блок Лицензии ++++++++++++*/
+/* line 548, ../sass/screen.scss */
 .licenceWrap {
   background-color: #f2f2f2;
   font-family: Raleway;
@@ -644,23 +666,23 @@ html, body {
   padding-bottom: 30px;
 }
 
-/* line 532, ../sass/screen.scss */
+/* line 557, ../sass/screen.scss */
 .effect {
   position: relative;
 }
-/* line 534, ../sass/screen.scss */
+/* line 559, ../sass/screen.scss */
 .effect img {
   width: 100%;
   height: 100%;
 }
 
-/* line 540, ../sass/screen.scss */
+/* line 565, ../sass/screen.scss */
 .eff-1-1 {
   max-width: 450px;
   margin: 10px auto;
   overflow: hidden;
 }
-/* line 544, ../sass/screen.scss */
+/* line 569, ../sass/screen.scss */
 .eff-1-1 .caption {
   position: absolute;
   top: -100%;
@@ -675,44 +697,44 @@ html, body {
   -ms-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
   transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
 }
-/* line 557, ../sass/screen.scss */
+/* line 582, ../sass/screen.scss */
 .eff-1-1 .caption i {
   position: relative;
   top: 48%;
 }
-/* line 562, ../sass/screen.scss */
+/* line 587, ../sass/screen.scss */
 .eff-1-1:hover .caption {
   top: 0px;
 }
 
-/*++++++++++++ ╨С╨╗╨╛╨║ ╨Ъ╨╛╨╜╤В╨░╨║╤В╤Л ++++++++++++*/
-/*╨Ъ╨░╤А╤В╨░*/
-/* line 570, ../sass/screen.scss */
+/*++++++++++++ Блок Контакты ++++++++++++*/
+/*Карта*/
+/* line 595, ../sass/screen.scss */
 .map {
   width: 100%;
   height: 500px;
   margin-bottom: 20px;
 }
 
-/* ╨С╨░╨╖╨╛╨▓╤Л╨╣ ╨║╨╛╨╜╤В╨╡╨╣╨╜╨╡╤А ╤В╨░╨▒╨╛╨▓ */
-/* line 578, ../sass/screen.scss */
+/* Базовый контейнер табов */
+/* line 603, ../sass/screen.scss */
 .tabs {
   min-width: 320px;
   padding: 0px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 583, ../sass/screen.scss */
+/* line 608, ../sass/screen.scss */
 .tabs input {
   display: none;
   border: none;
 }
-/* line 586, ../sass/screen.scss */
+/* line 611, ../sass/screen.scss */
 .tabs input:checked + label {
   color: #26AF76;
   border-bottom: 3px dashed #26AF76;
 }
-/* line 591, ../sass/screen.scss */
+/* line 616, ../sass/screen.scss */
 .tabs label {
   display: inline-block;
   margin: 0 0 -1px;
@@ -722,25 +744,172 @@ html, body {
   margin-bottom: 20px;
   margin-left: 10px;
 }
-/* line 599, ../sass/screen.scss */
+/* line 624, ../sass/screen.scss */
 .tabs label:hover {
   color: #888;
   cursor: pointer;
 }
 
-/* line 608, ../sass/screen.scss */
+/* line 633, ../sass/screen.scss */
 section {
   display: none;
   background: #fff;
 }
 
-/* line 614, ../sass/screen.scss */
+/* line 639, ../sass/screen.scss */
 #content1, #content2 {
   display: none;
 }
 
-/* line 617, ../sass/screen.scss */
+/* line 642, ../sass/screen.scss */
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2 {
   display: block;
+}
+
+@media screen and (max-width: 1110px) {
+  /* line 650, ../sass/screen.scss */
+  .advantage__title {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  /* line 659, ../sass/screen.scss */
+  .mainMenu__item a {
+    font-size: 16px;
+  }
+
+  /* line 663, ../sass/screen.scss */
+  .advantage__title {
+    padding: 10px 0;
+  }
+}
+@media screen and (max-width: 930px) {
+  /* line 669, ../sass/screen.scss */
+  .my-col-sm {
+    width: 50%;
+  }
+
+  /* line 673, ../sass/screen.scss */
+  .mainMenu__item_white {
+    font-weight: 100 !important;
+  }
+
+  /* line 676, ../sass/screen.scss */
+  #advantage {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 910px) {
+  /* line 683, ../sass/screen.scss */
+  .mainMenu__item {
+    margin: 0;
+  }
+}
+/* TODO */
+@media (max-width: 787px) {
+  /* line 691, ../sass/screen.scss */
+  #advantage {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* line 696, ../sass/screen.scss */
+  .mainMenu {
+    display: none;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    color: #333;
+  }
+  /* line 702, ../sass/screen.scss */
+  .mainMenu__item {
+    float: none;
+    background-color: #fff;
+    line-height: 30px;
+    border-bottom: 1px solid #f6e8e8;
+  }
+  /* line 707, ../sass/screen.scss */
+  .mainMenu__item a {
+    color: #333 !important;
+  }
+
+  /* line 714, ../sass/screen.scss */
+  .nav li:first-child a {
+    border-top: none;
+  }
+
+  /* line 715, ../sass/screen.scss */
+  #touch-menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 719, ../sass/screen.scss */
+  .countsWrap__counts {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 726, ../sass/screen.scss */
+  .title__description {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 605px) {
+  /* line 732, ../sass/screen.scss */
+  .Mypagination__elem {
+    width: 40px;
+    height: 40px;
+  }
+  /* line 736, ../sass/screen.scss */
+  .Mypagination__elem a {
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 555px) {
+  /* line 743, ../sass/screen.scss */
+  .my-col-sm {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 515px) {
+  /* line 749, ../sass/screen.scss */
+  .Mypagination__elem {
+    margin: 20px 3px;
+  }
+}
+@media screen and (max-width: 420px) {
+  /* line 755, ../sass/screen.scss */
+  .fullscr__intro_big {
+    font-size: 80px;
+  }
+
+  /* line 759, ../sass/screen.scss */
+  .quotes {
+    margin: 20px auto;
+  }
+}
+@media screen and (max-width: 360px) {
+  /* line 766, ../sass/screen.scss */
+  .title__description {
+    width: 100%;
+  }
+
+  /* line 769, ../sass/screen.scss */
+  .fullscr__intro_big {
+    font-size: 70px;
+  }
+
+  /* line 772, ../sass/screen.scss */
+  .Mypagination__elem {
+    width: 25px;
+  }
+}
+@media screen and (max-width: 321px) {
+  /* line 778, ../sass/screen.scss */
+  .Mypagination__elem {
+    width: 20px;
+  }
 }

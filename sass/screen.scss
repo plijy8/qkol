@@ -29,7 +29,7 @@ html, body{
     font-family: Raleway;
     &__Overlay{
         //background-image: url(../images/pattern.png);
-        //background-color: rgba(44, 62, 80, 0.4);
+        background-color: rgba(0, 0, 0, 0.1);
         z-index: 1;
         background-repeat: repeat;
         height: 100%;
@@ -37,7 +37,7 @@ html, body{
     &__intro{
         width: 100%;
         top:35%;    
-        color: $primary-colorGreen2;
+        color: white;
         position: absolute;
         &_big{
             font-size: 100px;
@@ -157,7 +157,8 @@ html, body{
             }
         }
         &_white{
-            color: #1d8566 !important;
+            color: white !important;
+            font-weight: 600 !important;
              &:hover{
                 color: $primary-colorGreen !important;
             }

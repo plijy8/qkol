@@ -33,7 +33,7 @@ $(document).ready(function(){
 
             $('#fun-level2').animateNumber(
               {
-                number: 15,
+                number: 2000,
                 'font-size': '50px',
                 numberStep: function(now, tween) {
                   var floored_number = Math.floor(now),

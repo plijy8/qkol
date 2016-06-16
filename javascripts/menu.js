@@ -10,6 +10,10 @@ var touch = $('#touch-menu');
 //плавный переход по ссылкам
         
        $('a[href^="#"]').click(function(){
+        
+        if($(this).attr('href')=="#img" || $(this).attr('href')=="#img1"){
+            return;
+        }
         var el = $(this).attr('href');
         if(width>787)
         {

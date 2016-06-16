@@ -5,11 +5,11 @@
     src: url(../fonts/ofont.ru_Raleway.ttf); 
 }
  
-$primary-colorGreen: #26AF76;
+$primary-colorGreen: #26AF86;
 $primary-colorOrange: #E7746F;
-$primary-colorGreen2:#2fa49d;
+$primary-colorGreen2:#1d8566;;
 
-$fontColor: #1c0f04;
+$fontColor: #333;
 
 html, body{
     height: 100%;
@@ -20,7 +20,7 @@ html, body{
 /*+++++++++++ Остальные стили +++++++++++++*/
 
 .fullscr{
-    background-image: url(../images/factory2.jpeg);
+    background-image: url(../images/back2.jpeg);
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
@@ -37,12 +37,11 @@ html, body{
     &__intro{
         width: 100%;
         top:35%;    
-        color: #fff;
+        color: $primary-colorGreen2;
         position: absolute;
         &_big{
             font-size: 100px;
             padding: 15px;
-            text-transform: uppercase;
         }
         &_small{
             font-size: 16px;
@@ -79,26 +78,14 @@ html, body{
 }
 
 
-.section{
-	max-width: 1127px;
-	margin: 0 auto 30px;
-	overflow: hidden;
-	p{
-		padding: 5px;
-		i{
-			color: rgba(194,156,109,.8);
-			font-size: 20px;
-			margin: 5px;
-		}
-	}
-}
+
 
 #sectionDark{
-    background-color: $fontColor;
+    background-color: #d3d3d3;
     min-height: 200px;
     text-align: center;
     p{
-        color: rgb(194,156,109);
+        color: $primary-colorGreen2;
         line-height: 200px;
 
     }
@@ -166,14 +153,13 @@ html, body{
             font-weight: 100;
             text-decoration: none;  
             &:hover{
-                color: $primary-colorOrange;
+                color: $primary-colorGreen;
             }
         }
         &_white{
-            color: white !important;
-            font-weight: 600 !important;
+            color: #1d8566 !important;
              &:hover{
-                color: $primary-colorOrange !important;
+                color: $primary-colorGreen !important;
             }
         }
         ul{
@@ -299,6 +285,8 @@ html, body{
 
 #advantage{
     overflow: hidden;
+    max-width: 1400px;
+    margin: auto;
 }
 .advantage{
     padding: 30px 0 0;
@@ -312,7 +300,7 @@ html, body{
     min-height: 280px;
     &__icon{
         font-size: 50px;
-        color: rgba(194,156,109,.3);
+        color: $primary-colorGreen;
     }
     &__title{
         font-weight: 300;
@@ -334,7 +322,7 @@ html, body{
         text-indent: 0px !important;
     }
     &:hover>.advantage__icon{
-        color: rgba(194,156,109,.6);
+        color: $primary-colorGreen2;
     }
 }
 
@@ -349,7 +337,7 @@ html, body{
     margin: 20px auto;
     overflow:hidden;
     &__counts{
-        border: 2px solid #835c39;
+        border: 2px solid $primary-colorGreen2;
         border-radius: 50%;
         width: 180px;
         height: 180px;
@@ -360,7 +348,7 @@ html, body{
             text-indent: 0px !important;
             span{
                 font-size: 50px;
-                color: #835c39;
+                color: $primary-colorGreen2;
             }
         }
     }
@@ -373,11 +361,13 @@ html, body{
     color: $fontColor;
     font-size: 22px;
     padding-bottom: 30px;
+    max-width: 1000px;
+    margin: auto;
     &__item{
         line-height: 32px;
     }
     i{
-        color: rgba(194,156,109,.8);
+        color: $primary-colorGreen;
         margin-right: 10px;
     }
 }
@@ -467,19 +457,21 @@ html, body{
     color: #333;
     font-size: 22px;
     padding-bottom: 30px;
+    max-width: 1000px;
+    margin: auto;
     &__item{
         line-height: 32px;
         a{
             color:$fontColor;
             text-decoration: none;
             &:hover {
-                color:$primary-colorOrange;
+                color:$primary-colorGreen;
             }
         }
 
     }
     i{
-        color: rgba(194,156,109,.8);
+        color: $primary-colorGreen;
         margin-right: 10px;
     }
 
@@ -545,15 +537,15 @@ html, body{
     font-size: 25px;
   }
   &:hover{
-    color: rgb(131,92,57);
+    color: $primary-colorGreen2;
   }
 }
 .horizontal-click > :checked + label + * {
   overflow: auto;
-  height: 450px;
+  height: 400px;
 }
 .horizontal-click > :checked + label {
-  background: rgba(194,156,109,.4);
+  background: rgba(194,156,109,.2);
   cursor: default;
   color: white;
 }
@@ -578,15 +570,15 @@ html, body{
 }
 
 .eff-1-1 {
-    max-width: 450px;
-    max-height: 330px;
+    max-width: 600px;
+    max-height: 400px;
     margin: 10px auto;
     overflow: hidden;
     .caption {
         position: absolute;
         opacity: 0;
         top: 0px;
-        line-height: 330px;
+        line-height: 400px;
         width: 100%;
         vertical-align: middle;
         transition: all .3s linear;
@@ -595,10 +587,43 @@ html, body{
             top:48%;
         }
     }
+    a{
+        color: $primary-colorGreen;
+    }
     &:hover .caption {
          opacity: 1;
          background-color: rgba(255,255,255,.6);
     }
+}
+
+.lightbox {
+    /** Default lightbox to hidden */
+    display: none;
+
+    /** Position and style */
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+    /** Pad the lightbox image */
+    max-width: 90%;
+    max-height: 80%;
+    margin-top: 2%;
+}
+
+.lightbox:target {
+    /** Remove default browser outline */
+    outline: none;
+
+    /** Unhide lightbox **/
+    display: block;
 }
 
 /*++++++++++++ Блок Контакты ++++++++++++*/
@@ -606,7 +631,7 @@ html, body{
 /*Карта*/
 .map {
     width: 100%;
-    height: 500px;
+    height: 600px;
     margin-bottom: 20px;
 }
 
@@ -621,8 +646,8 @@ html, body{
         display: none;
         border: none;
         &:checked +label {
-            color: rgba(194,156,109,.8);
-            border-bottom: 3px dashed rgba(194,156,109,.8);
+            color: $primary-colorGreen;
+            border-bottom: 3px dashed $primary-colorGreen;
         }
     }
     label {
@@ -648,6 +673,20 @@ section {
   
 }
 
+.section{
+    max-width: 1127px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    p{
+        padding: 5px;
+        i{
+            color: $primary-colorGreen;
+            font-size: 20px;
+            margin: 5px;
+        }
+    }
+}
+
 #content1,#content2{
     display: none;
 }
@@ -656,7 +695,22 @@ section {
   display: block;
 }
 
+@media screen and (max-width: 1450px) {
+    .map {
+        height: 500px;
+    }
+    .eff-1-1 {
+        max-width: 450px;
+        max-height: 330px;
+        .caption {
+            line-height: 330px;
+        }
+    }
+    .fullscr{
+    background-image: url(../images/back.jpg);
+}
 
+}
 
 @media screen and (max-width: 1110px) {
     .advantage__title {

@@ -19,14 +19,144 @@
     <script src="javascripts/jquery.animateNumber.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
+    
     <script>new WOW().init();</script>
     <script type="text/javascript">
         google.maps.event.addDomListener(window, 'load', init);
     </script>
+    <script src="javascripts/modernizr.custom.js"></script>
 </head>
 <body>
 
 <a href="#top" class = "topLink"><i class="fa fa-angle-up"></i></a>
+
+<div class="md-modal md-effect-1" id="modal-1">
+    <div class="md-content">
+        <h3>Объекты здравоохранения</h3>
+        <ul class = "partners">
+            <li class = "partners__item">Администрация города Кузнецка</li>
+            <li class = "partners__item">Администрация Кузнецкого района</li>
+            <li class = "partners__item">Банки города Кузнецка и Кузнецкого, Неверкинского, Сосновоборского района</li>
+            <li class = "partners__item">ГБУЗ "Кузнецкая городская стоматологическая поликлиника"</li>
+            <li class = "partners__item">ГБУЗ "Кузнецкая межрайонная больница"</li>
+            <li class = "partners__item">ГБУЗ "Кузнецкая межрайонная детская больница"</li>
+            <li class = "partners__item">ГБУЗ "Пензенский дом ребенка"</li>
+            <li class = "partners__item">ГКОУ "Неверкинская школа - интернат для детей сирот"</li>
+            <li class = "partners__item">ГНУ ГОСНИТИ "Россельхозакадемия"</li>
+            <li class = "partners__item">ЗАО "Кузнецкмелиорация"</li>
+            <li class = "partners__item">МАУ СОК "Рубин"</li>
+        </ul>
+        <button class="md-close">Закрыть!</button>
+    </div>
+</div>
+
+<div class="md-modal md-effect-1" id="modal-2">
+    <div class="md-content">
+        <h3>Объекты управления</h3>
+        <ul class = "partners">
+            <li class = "partners__item">МБУ Управление по делам ГОЧС города Кузнецка Пензенской области</li>
+            <li class = "partners__item">МУП "Ритуал"</li>
+            <li class = "partners__item">МУП ЖКХ "Кристалл"</li>
+            <li class = "partners__item">ООО "НПО "Нефтегазового машиностроения и специального автомобилестроения"</li>
+            <li class = "partners__item">ОАО "ДРСУ-5"</li>
+            <li class = "partners__item">ОАО "ДЭП №84"</li>
+            <li class = "partners__item">ОАО "Кузнецкмежрайгаз"</li>
+            <li class = "partners__item">ОАО "Кузролик"</li>
+            <li class = "partners__item">ОАО "Кузнецкэлектромонтаж"</li>
+            <li class = "partners__item">ОАО "РЖД"</li>
+            <li class = "partners__item">ОАО "ЯСМ"</li>
+            <li class = "partners__item">Объекты сельского хозяйства города Кузнецка и Кузнецкого, Неверкинского, Сосновоборского района</li>
+        </ul>
+        <button class="md-close">Закрыть!</button>
+    </div>
+</div>
+
+<div class="md-modal md-effect-1" id="modal-3">
+    <div class="md-content">
+        <h3>Объекты производства</h3>
+        <ul  class = "partners">
+                        <li class = "partners__item">Объекты торговли, сферы услуг, предприниматели города Кузнецка и Кузнецкого, Неверкинского, Сосновоборского района</li>
+                        <li class = "partners__item">Объекты общепита и пекарни города Кузнецка и Кузнецкого, Неверкинского, Сосновоборского района</li>
+                        <li class = "partners__item">ООО "Арго"</li>
+                        <li class = "partners__item">ООО "Арх Концепт"</li>
+                        <li class = "partners__item">ООО "Вердис"</li>
+                        <li class = "partners__item">ООО "Вторресурсы"</li>
+                        <li class = "partners__item">ООО "Газспецстрой"</li>
+                        <li class = "partners__item">ООО "Горводоканал"</li>
+                        <li class = "partners__item">ООО "Гортеплосеть"</li>
+                        <li class = "partners__item">ООО "Горэлектросеть"</li>
+                        <li class = "partners__item">ООО "Делис-Мебель"</li>
+                        <li class = "partners__item">ООО "Домострой"</li>
+                    </ul>
+        <button class="md-close">Закрыть!</button>
+    </div>
+</div>
+
+
+<div class="md-modal md-effect-1" id="modal-4">
+    <div class="md-content">
+        <h3>Объекты промышленности</h3>
+        <ul  class = "partners">
+                        <li class = "partners__item">ООО "Дубрава"</li>
+                        <li class = "partners__item">ООО "Евлашеский ДОК"</li>
+                        <li class = "partners__item">ООО "Каравай"</li>
+                        <li class = "partners__item">ООО "Кузнецкая компания теплоснабжения"</li>
+                        <li class = "partners__item">ООО "Кузнецкая одежда плюс"</li>
+                        <li class = "partners__item">ООО "Кузнецкий проект"</li>
+                        <li class = "partners__item">ООО "Объединенные пензенские водочные заводы"</li>
+                        <li class = "partners__item">ООО "Лада хлеб"</li>
+                        <li class = "partners__item">ООО "Лифтсервис"</li>
+                        <li class = "partners__item">ООО "Ломов - Агро"</li>
+                        <li class = "partners__item">ООО "Модуль"</li>
+                        <li class = "partners__item">ООО "Монолитстрой"</li>
+                    </ul>
+        <button class="md-close">Закрыть!</button>
+    </div>
+</div>
+
+<div class="md-modal md-effect-1" id="modal-5">
+    <div class="md-content">
+        <h3>Объекты торговли</h3>
+        <ul  class = "partners">
+                        <li class = "partners__item">ООО "Мосдомстрой"</li>
+                        <li class = "partners__item">ООО "НАСТ"</li>
+                        <li class = "partners__item">ООО "Пензагрохолдинг"</li>
+                        <li class = "partners__item">ООО "Проектные работы"</li>
+                        <li class = "partners__item">ООО "Росагрохолдинг"</li>
+                        <li class = "partners__item">ООО "Спецзаказ"</li>
+                        <li class = "partners__item">ООО "Стандарт"</li>
+                        <li class = "partners__item">ООО "Тандем МАШ"</li>
+                        <li class = "partners__item">ООО "ТранСтройМагистраль"</li>
+                        <li class = "partners__item">ООО "Чибирлейский Леспромхоз"</li>
+                        <li class = "partners__item">ООО "Экосервис"</li>
+                    </ul>
+        <button class="md-close">Закрыть!</button>
+    </div>
+</div>
+
+<div class="md-modal md-effect-1" id="modal-6">
+    <div class="md-content">
+        <h3>Иные объекты</h3>
+        <ul  class = "partners">
+                        <li class = "partners__item">ООО "Элна Мебель"</li>
+                        <li class = "partners__item">ООО "Энергия"</li>
+                        <li class = "partners__item">ООО ПП "Кузнецк АТО"</li>
+                        <li class = "partners__item">ООО ПТЦ "НАСЛ"</li>
+                        <li class = "partners__item">ООО РРСК "Рестремстрой"</li>
+                        <li class = "partners__item">СПК "Гигант-1"</li>
+                        <li class = "partners__item">СПК "Кунчерово"</li>
+                        <li class = "partners__item">СПССК "Ручеек"</li>
+                        <li class = "partners__item">СХПК "Фортуна"</li>
+                        <li class = "partners__item">Управление капитального стоительства города Кузнецка</li>
+                        <li class = "partners__item">Учреждения здравоохранения города Кузнецка</li>
+                        <li class = "partners__item">Учреждения культуры города Кузнецка и Кузнецкого, Неверкинского, Сосновоборского района</li>
+                        <li class = "partners__item">Учреждения образования города Кузнецка и Кузнецкого, Неверкинского, Сосновоборского района</li>
+                    </ul>
+        <button class="md-close">Закрыть!</button>
+    </div>
+</div>
+
+
 
 <div class = "fullscr " id="top">
   <div class = "fullscr__Overlay">
@@ -187,11 +317,16 @@
                     <i class="fa fa-check" aria-hidden="true"></i>Информационно-консультационные услуги в сфере промышленной безопасности</li>
                 <li class="services__item wow fadeInRight" data-wow-delay=".3s">
                     <i class="fa fa-check" aria-hidden="true"></i>Паспортизация опасных отходов</li>
+                <li class="services__item wow fadeInRight" data-wow-delay=".3s">
+                    <i class="fa fa-check" aria-hidden="true"></i>Создание и поддержка сайтов</li>
             </ul>
         </div>
         <div class="col-md-2 col-sm-1 col-xs-0"></div>
     </div><!-- Конец услуги-->  
 
+
+
+    
 
 <!-- Партнеры-->  
 <div class="row partnersWrap" id = "partners">
@@ -199,11 +334,56 @@
                 <h1>Партнеры</h1>
                 <div class="title__line"></div>
         </div>
+        <div class = "partnersModal">
+            <div class="column wow zoomIn">
+                <div class="md-trigger" data-modal="modal-1">
+                    <i class="fa fa-hospital-o" aria-hidden="true"></i>
+                    <p>Объекты здравоохраения</p>
+                </div>
+            </div>
+
+            <div class="column wow zoomIn" data-wow-delay=".1s">
+                <div class="md-trigger" data-modal="modal-2">
+                    <i class="fa fa-university" aria-hidden="true"></i>
+                    <p>Объекты управления</p>
+                </div>
+            </div>
+
+            <div class="column wow zoomIn" data-wow-delay=".2s">
+                <div class="md-trigger" data-modal="modal-3">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    <p>Объекты производства</p>
+                </div>
+            </div>
+
+            <div class="column wow zoomIn" data-wow-delay=".3s">
+                <div class="md-trigger" data-modal="modal-4">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <p>Объекты промышленности</p>
+                </div>
+            </div>
+
+            <div class="column wow zoomIn" data-wow-delay=".3s">
+                <div class="md-trigger" data-modal="modal-5">
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                    <p>Объекты торговли</p>
+                </div>
+            </div>
+
+            <div class="column wow zoomIn" data-wow-delay=".4s">
+                <div class="md-trigger" data-modal="modal-6">
+                    <i class="fa fa-building" aria-hidden="true"></i>
+                    <p>Иные объекты</p>
+                </div>
+            </div>
+        </div>
+
+<div class="partnersList">
         <div class="horizontal-click wow fadeInDown">
             <input type="radio" name="vkl" id="vkl1" />
-                <label for="vkl1"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Заголовок 1</label>
+                <label for="vkl1"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Объекты здравоохраения</label>
                 <div>
-                        <ul class = "partners">
+                    <ul class = "partners">
                         <li class = "partners__item">Администрация города Кузнецка</li>
                         <li class = "partners__item">Администрация Кузнецкого района</li>
                         <li class = "partners__item">Банки города Кузнецка и Кузнецкого, Неверкинского, Сосновоборского района</li>
@@ -218,7 +398,7 @@
                     </ul>
                 </div>
             <input type="radio" name="vkl" id="vkl2" />
-                <label for="vkl2"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Заголовок 2</label>
+                <label for="vkl2"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Объекты управления</label>
                 <div>
                     <ul class = "partners">
                         <li class = "partners__item">МБУ Управление по делам ГОЧС города Кузнецка Пензенской области</li>
@@ -236,7 +416,7 @@
                     </ul>
                 </div>
             <input type="radio" name="vkl" id="vkl3"/>
-                <label for="vkl3"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Заголовок 3</label>
+                <label for="vkl3"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Объекты производства</label>
                 <div>
                     <ul  class = "partners">
                         <li class = "partners__item">Объекты торговли, сферы услуг, предприниматели города Кузнецка и Кузнецкого, Неверкинского, Сосновоборского района</li>
@@ -254,7 +434,7 @@
                     </ul>
                 </div>
             <input type="radio" name="vkl" id="vkl4"/>
-                <label for="vkl4"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Заголовок 4</label>
+                <label for="vkl4"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Объекты промышленности</label>
                 <div>
                     <ul  class = "partners">
                         <li class = "partners__item">ООО "Дубрава"</li>
@@ -272,7 +452,7 @@
                     </ul>
                 </div>
             <input type="radio" name="vkl" id="vkl5"/>
-                <label for="vkl5"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Заголовок 5 </label>
+                <label for="vkl5"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Объекты торговли </label>
                 <div>
                     <ul  class = "partners">
                         <li class = "partners__item">ООО "Мосдомстрой"</li>
@@ -289,7 +469,7 @@
                     </ul>
                 </div>
                 <input type="radio" name="vkl" id="vkl6"/>
-                <label for="vkl6"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Заголовок 6 </label>
+                <label for="vkl6"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Иные объекты </label>
                 <div>
                     <ul  class = "partners">
                         <li class = "partners__item">ООО "Элна Мебель"</li>
@@ -307,7 +487,7 @@
                         <li class = "partners__item">Учреждения образования города Кузнецка и Кузнецкого, Неверкинского, Сосновоборского района</li>
                     </ul>
                 </div>
-        </div>
+        </div></div>
     </div>  <!-- Конец партнеры-->
 
       
@@ -472,10 +652,16 @@
     <div class="container-fluid">
         <div class="row" id="sectionDark">
         <div class="col-md-12">
-            <p>ООО "Эколог" 2016г</p>
+            <p>ООО "Эколог" 2016 г.</p>
         </div>
     </div>     
     </div>
-      
+    <div class="md-overlay"></div>
+    <div class="md-overlay"></div><!-- the overlay element -->
+
+            <!-- classie.js by @desandro: https://github.com/desandro/classie -->
+        <script src="javascripts/classie.js"></script>
+        <script src="javascripts/modalEffects.js"></script>
 </body>
+</html>
 

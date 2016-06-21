@@ -1,5 +1,7 @@
 $(document).ready(function(){
     
+ var menu_selector = "#mainMenu"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню. 
+
 var touch = $('#touch-menu');
        var menu = $('.mainMenu');
        var width = $(window).width();
@@ -9,26 +11,35 @@ var touch = $('#touch-menu');
 
 //плавный переход по ссылкам
         
-       $('a[href^="#"]').click(function(){
-        
+       $('a[href^="#"]').click(function(e){
+               //e.preventDefault();
+
         if($(this).attr('href')=="#img" || $(this).attr('href')=="#img1"){
             return;
         }
+        //$(document).off("scroll");
+        $(menu_selector + " a.mainMenu__item_active").removeClass("mainMenu__item_active");
+        $(this).addClass("mainMenu__item_active");
+        
+
         var el = $(this).attr('href');
         if(width>787)
         {
             $('html, body').animate({
-            scrollTop: $(el).offset().top-69}, 1500);    
+            scrollTop: $(el).offset().top-64}, 1500); 
+
         }
         else{
             $('html, body').animate({
             scrollTop: $(el).offset().top}, 1500);
         }
+
         return false; 
 
 });
 
 
+/* мобильное меню*/
 
             $(touch).on('click', function(e) {
                 e.preventDefault();
@@ -57,6 +68,21 @@ var touch = $('#touch-menu');
         var HeaderTop = $('#mainMenu').offset().top;
 
         $(window).scroll(function(){
+
+            var $sections = $('.sec');
+            $sections.each(function(i,el){
+            var top  = $(el).offset().top-100;
+            var bottom = top +$(el).height();
+            var scroll = $(window).scrollTop();
+            var id = $(el).attr('id');
+            if( scroll > top && scroll < bottom){
+                $('a.mainMenu__item_active').removeClass('mainMenu__item_active');
+                $('a[href="#'+id+'"]').addClass('mainMenu__item_active');
+
+            }
+            })
+
+            
             if( $(window).scrollTop() > HeaderTop ) {
                 $('#mainMenu').addClass("mainMenuWrap") ;
                 if(width>787){
@@ -77,4 +103,11 @@ var touch = $('#touch-menu');
                 $('.topLink').css({visibility: 'hidden'});
             }
         });
+
+        /*активное меню*/
+
+
+
+
+
 });

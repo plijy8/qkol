@@ -6,9 +6,10 @@
 }
  
 //$primary-colorGreen: #26AF76;
-$primary-colorGreen: #5bb899;
-$primary-colorOrange: #E7746F;
-$primary-colorGreen2:#1d8566;;
+$primary-colorGreen: #ffcc0d;
+
+$primary-colorOrange: #5bb899;
+$primary-colorGreen2:#c09700;;
 
 $fontColor: #333;
 
@@ -21,7 +22,7 @@ html, body{
 /*+++++++++++ Остальные стили +++++++++++++*/
 
 .fullscr{
-    background-image: url(../images/back2.jpeg);
+    background-image: url(../images/factory2.jpeg);
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
@@ -41,7 +42,8 @@ html, body{
         color: white;
         position: absolute;
         &_big{
-            font-size: 100px;
+            //display: none;
+            font-size: 130px;
             padding: 15px;
         }
         &_small{
@@ -102,6 +104,7 @@ html, body{
     transition: background-color .3s linear;
     position: fixed;
     top:0px;
+    max-height: 65px;
     border-bottom: 1px solid #d3d3d3;
     background-color: #fff;
 
@@ -145,24 +148,29 @@ html, body{
     }
     &__item{
         float: left;
-        padding: 10px 15px;
+        
         letter-spacing: 3px;   
-        margin: 0 10px;
+        margin: 10px 25px;
         max-height: 65px;
         a{
             color: $fontColor;
             font-weight: 100;
-            text-decoration: none;  
+            text-decoration: none;
             &:hover{
-                color: $primary-colorGreen;
-            }
+                //color: $primary-colorGreen;
+                border-bottom: 4px solid $primary-colorGreen;
+            }  
         }
+        
         &_white{
             color: white !important;
             font-weight: 600 !important;
              &:hover{
-                color: $primary-colorGreen !important;
+                //color: $primary-colorGreen !important;
             }
+        }
+        &_active{
+            border-bottom: 4px solid $primary-colorGreen;
         }
         ul{
             background: $fontColor;
@@ -364,6 +372,7 @@ html, body{
     font-size: 22px;
     padding-bottom: 30px;
     max-width: 1000px;
+    overflow: hidden;
     margin: auto;
     &__item{
         line-height: 32px;
@@ -467,7 +476,7 @@ html, body{
             color:$fontColor;
             text-decoration: none;
             &:hover {
-                color:$primary-colorGreen;
+                color:$primary-colorGreen2;
             }
         }
 
@@ -872,7 +881,7 @@ section {
         }
     }
     .fullscr{
-    background-image: url(../images/back.jpg);
+    //background-image: url(../images/back.jpg);
 }
 
 }
@@ -939,12 +948,17 @@ section {
         &__item{
             float: none;
             background-color: #fff;
-            line-height: 30px;
+            line-height: 50px;
             border-bottom:1px solid #f6e8e8;
             a{
                 color:$fontColor !important;
+                &:hover{
+                    color:$primary-colorGreen !important;
+                    border:none;
+                }
 
             }
+
         }
     }
     
@@ -960,6 +974,15 @@ section {
         width: 80%;
     }
 
+}
+
+@media screen and (max-width: 730px) {
+    .fullscr__intro_big{
+        display: block;
+    }
+    svg{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -1037,4 +1060,28 @@ section {
     .partnersList{
         display: block;
     }
+}
+
+svg {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+ /* border: 1px solid;*/
+  }
+
+path {
+  fill: none;
+  stroke: url(#stripes);
+  stroke-width: 15;
+  stroke-dasharray: 0 550;
+  animation: dasharray 2s ease-out alternate;
+animation-fill-mode:forwards;
+  }
+
+@keyframes dasharray {
+  100% {
+    stroke-dasharray: 550 0;  
+  }
 }

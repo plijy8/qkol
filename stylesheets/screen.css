@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -75,7 +75,7 @@ html, body {
   color: #333;
 }
 
-/*+++++++++++ ╨Ю╤Б╤В╨░╨╗╤М╨╜╤Л╨╡ ╤Б╤В╨╕╨╗╨╕ +++++++++++++*/
+/*+++++++++++ Остальные стили +++++++++++++*/
 /* line 24, ../sass/screen.scss */
 .fullscr {
   background-image: url(../images/factory2.jpeg);
@@ -111,7 +111,7 @@ html, body {
   padding: 15px;
 }
 
-/* ╨Ч╨░╨│╨╛╨╗╨╛╨▓╨║╨╕ */
+/* Заголовки */
 /* line 59, ../sass/screen.scss */
 .title {
   margin-top: 30px;
@@ -151,7 +151,7 @@ html, body {
   line-height: 200px;
 }
 
-/* ╨Ь╨╡╨╜╤О */
+/* Меню */
 /* line 100, ../sass/screen.scss */
 .mainMenuWrap {
   width: 100%;
@@ -211,7 +211,7 @@ html, body {
 .mainMenu__item {
   float: left;
   letter-spacing: 3px;
-  margin: 10px 25px;
+  padding: 10px 25px;
   max-height: 65px;
 }
 /* line 155, ../sass/screen.scss */
@@ -323,7 +323,7 @@ html, body {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/*+++++++++ ╨С╨╗╨╛╨║ ╨╛ ╨║╨╛╨╝╨┐╨░╨╜╨╕╨╕ ++++++++++ */
+/*+++++++++ Блок о компании ++++++++++ */
 /* line 263, ../sass/screen.scss */
 .aboutWrap {
   padding: 15px;
@@ -344,7 +344,7 @@ html, body {
   font-style: italic;
 }
 
-/* ╨Ъ╨░╨▓╤Л╤З╨║╨╕ */
+/* Кавычки */
 /* line 282, ../sass/screen.scss */
 .quotes {
   text-align: right;
@@ -410,7 +410,7 @@ html, body {
   color: #c09700;
 }
 
-/* ╨Р╨╜╨╕╨╝╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╡ ╤Ж╨╕╤Д╤А╤Л */
+/* Анимированные цифры */
 /* line 342, ../sass/screen.scss */
 .countsWrap {
   text-align: center;
@@ -440,7 +440,7 @@ html, body {
   color: #c09700;
 }
 
-/*++++++++++++ ╨С╨╗╨╛╨║ ╨г╤Б╨╗╤Г╨│╨╕ ++++++++++++*/
+/*++++++++++++ Блок Услуги ++++++++++++*/
 /* line 369, ../sass/screen.scss */
 .services {
   font-family: Raleway;
@@ -461,7 +461,7 @@ html, body {
   margin-right: 10px;
 }
 
-/*++++++++++++ ╨С╨╗╨╛╨║ ╨Э╨╛╨▓╨╛╤Б╤В╨╕ ++++++++++++*/
+/*++++++++++++ Блок Новости ++++++++++++*/
 /* line 388, ../sass/screen.scss */
 .newsWrap {
   margin: 0 auto;
@@ -472,7 +472,7 @@ html, body {
   padding-bottom: 30px;
 }
 
-/* ╨Р╨╜╨╕╨╝╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▒╨╛╤А╨┤╨╡╤А */
+/* Анимированный бордер */
 /* line 401, ../sass/screen.scss */
 .box {
   width: 260px;
@@ -571,7 +571,7 @@ html, body {
   margin-right: 10px;
 }
 
-/*++++++++++++ ╨С╨╗╨╛╨║ ╨Я╨░╤А╤В╨╜╨╡╤А╤Л ++++++++++++*/
+/*++++++++++++ Блок Партнеры ++++++++++++*/
 /* line 493, ../sass/screen.scss */
 .partnersWrap {
   background-color: #f2f2f2;
@@ -771,7 +771,7 @@ html, body {
   opacity: 1;
 }
 
-/* ╨░╨║╨║╨╛╤А╨┤╨╡╨╛╨╜  */
+/* аккордеон  */
 /* line 681, ../sass/screen.scss */
 .horizontal-click [name="vkl"] {
   display: none;
@@ -831,7 +831,7 @@ html, body {
   color: white;
 }
 
-/*++++++++++++ ╨С╨╗╨╛╨║ ╨Ы╨╕╤Ж╨╡╨╜╨╖╨╕╨╕ ++++++++++++*/
+/*++++++++++++ Блок Лицензии ++++++++++++*/
 /* line 729, ../sass/screen.scss */
 .licenceWrap {
   background-color: #f2f2f2;
@@ -915,8 +915,8 @@ html, body {
   display: block;
 }
 
-/*++++++++++++ ╨С╨╗╨╛╨║ ╨Ъ╨╛╨╜╤В╨░╨║╤В╤Л ++++++++++++*/
-/*╨Ъ╨░╤А╤В╨░*/
+/*++++++++++++ Блок Контакты ++++++++++++*/
+/*Карта*/
 /* line 806, ../sass/screen.scss */
 .map {
   width: 100%;
@@ -924,7 +924,7 @@ html, body {
   margin-bottom: 20px;
 }
 
-/* ╨С╨░╨╖╨╛╨▓╤Л╨╣ ╨║╨╛╨╜╤В╨╡╨╣╨╜╨╡╤А ╤В╨░╨▒╨╛╨▓ */
+/* Базовый контейнер табов */
 /* line 814, ../sass/screen.scss */
 .tabs {
   min-width: 320px;
@@ -1192,7 +1192,7 @@ section {
     font-size: 75%;
   }
 }
-@media screen and (max-height: 690px) {
+@media screen and (max-height: 650px) and (max-width: 500px) {
   /* line 1057, ../sass/screen.scss */
   .partnersModal {
     display: none;

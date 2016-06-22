@@ -4,22 +4,43 @@
     font-family: Raleway; 
     src: url(../fonts/ofont.ru_Raleway.ttf); 
 }
+
+@font-face{
+    font-family: IntroCond; 
+    src: url(../fonts/IntroCond.otf); 
+}
  
 //$primary-colorGreen: #26AF76;
 $primary-colorGreen: #ffcc0d;
 
-$primary-colorOrange: #5bb899;
-$primary-colorGreen2:#c09700;;
+$primary-colorOrange: #FF4301;
+$primary-colorOrange2:#FF5C01;
+$primary-colorGreen2:#FFD955;;
 
-$fontColor: #333;
+$fontColor: #000;
 
 html, body{
     height: 100%;
-    font-family: Arial;
+    font-family: Raleway;
     color: #333;   
 }
 
 /*+++++++++++ Остальные стили +++++++++++++*/
+
+
+#hellopreloader_preload{
+    display: block;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFECDB url(../images/ball-triangle.svg) center center no-repeat;
+    background-size:106px;
+
+}
+
 
 .fullscr{
     background-image: url(../images/factory2.jpeg);
@@ -28,7 +49,7 @@ html, body{
     height: 100%;
     text-align: center;
     z-index: 4;
-    font-family: Raleway;
+    //font-family: Raleway;
     &__Overlay{
         //background-image: url(../images/pattern.png);
         background-color: rgba(0, 0, 0, 0.1);
@@ -62,7 +83,7 @@ html, body{
     padding: 20px;
     text-transform: uppercase;
     text-align: center;
-    font-family: Raleway;
+    //font-family: Raleway;
     &__line{
         margin: 30px auto 1px;
         width: 70px;
@@ -78,18 +99,22 @@ html, body{
         line-height: 30px;
         font-weight: normal;
     }
+    &_orange{
+        color: $primary-colorOrange;
+    }
 }
 
 
 
 
 #sectionDark{
-    background-color: #333;
-    min-height: 200px;
+    //background-color: #333;
+    min-height: 70px;
     text-align: center;
+    border-top: 1px solid #d3d3d3;
+    font-size: 19px;
     p{
-        color: white;
-        line-height: 200px;
+        line-height: 70px;
 
     }
 }
@@ -138,7 +163,7 @@ html, body{
     display: inline-block;
     font-size: 20px;
     text-align: center;
-    font-family: Raleway;
+    //font-family: Raleway;
     line-height: 50px;
     max-height: 65px;
     a {
@@ -165,9 +190,7 @@ html, body{
         &_white{
             color: white !important;
             font-weight: 600 !important;
-             &:hover{
-                //color: $primary-colorGreen !important;
-            }
+             
         }
         &_active{
             border-bottom: 4px solid $primary-colorGreen;
@@ -181,7 +204,7 @@ html, body{
             font-size: 12px;
             text-transform: uppercase;
             min-width: 170px;
-            font-family: Raleway;
+            //font-family: Raleway;
             li{
                 position: relative;
                 left: 0;
@@ -264,7 +287,7 @@ html, body{
 	//margin-top: 30px;
 	padding: 15px;
 	background-color: #f2f2f2;
-	font-family: Raleway;
+	//font-family: Raleway;
 	font-size: 22px;
 	text-align: justify;
     overflow: hidden;
@@ -274,7 +297,7 @@ html, body{
 	&__sign{
 		margin: 30px 0;
 		text-align: right;
-    	font-style: italic;
+    	//font-style: italic;
     }
 }
 
@@ -288,7 +311,7 @@ html, body{
     line-height: 30px;
     &__sign{
 
-    	font-style: italic;
+    	//font-style: italic;
     	font-size: 16px;
     }
 }
@@ -310,7 +333,7 @@ html, body{
     min-height: 280px;
     &__icon{
         font-size: 50px;
-        color: $primary-colorGreen;
+        color: $primary-colorGreen2;
     }
     &__title{
         font-weight: 300;
@@ -332,7 +355,7 @@ html, body{
         text-indent: 0px !important;
     }
     &:hover>.advantage__icon{
-        color: $primary-colorGreen2;
+        color: $primary-colorGreen;
     }
 }
 
@@ -342,12 +365,12 @@ html, body{
 .countsWrap{
     text-align: center;
     font-size: 22px;
-    font-family: Raleway;
+    //font-family: Raleway;
     max-width: 1127px;
     margin: 20px auto;
     overflow:hidden;
     &__counts{
-        border: 2px solid $primary-colorGreen2;
+        border: 2px solid $primary-colorOrange2;
         border-radius: 50%;
         width: 180px;
         height: 180px;
@@ -358,7 +381,7 @@ html, body{
             text-indent: 0px !important;
             span{
                 font-size: 50px;
-                color: $primary-colorGreen2;
+                color: $primary-colorOrange2;
             }
         }
     }
@@ -367,7 +390,7 @@ html, body{
 
 /*++++++++++++ Блок Услуги ++++++++++++*/
 .services{
-    font-family: Raleway;
+    //font-family: Raleway;
     color: $fontColor;
     font-size: 22px;
     padding-bottom: 30px;
@@ -388,7 +411,7 @@ html, body{
 .newsWrap{
  
     margin: 0 auto;
-    font-family: Raleway;
+    //font-family: Raleway;
     font-size: 22px;
     text-align: left;
     overflow: hidden;
@@ -464,7 +487,7 @@ html, body{
 
 
 .news{
-    font-family: Raleway;
+    //font-family: Raleway;
     color: #333;
     font-size: 22px;
     padding-bottom: 30px;
@@ -476,7 +499,7 @@ html, body{
             color:$fontColor;
             text-decoration: none;
             &:hover {
-                color:$primary-colorGreen2;
+                color:$primary-colorOrange2;
             }
         }
 
@@ -492,7 +515,7 @@ html, body{
 
 .partnersWrap{
     background-color: #f2f2f2;
-    font-family: Raleway;
+    //font-family: Raleway;
     color: $fontColor;
     font-size: 20px;
     padding-bottom: 30px;
@@ -547,12 +570,12 @@ html, body{
     }
     i{
         margin:15px auto; 
-        color: $primary-colorGreen;
+        color: $primary-colorGreen2;
         font-size: 50px;
     }
 
     &:hover >i {
-        color: $primary-colorGreen2;
+        color: $primary-colorGreen;
     }
 }
 .md-perspective,
@@ -573,9 +596,9 @@ html, body{
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 50%;
-    max-width: 630px;
-    min-width: 320px;
+    width: 90%;
+    max-width: 680px;
+    min-width: 318px;
     height: auto;
     z-index: 2000;
     visibility: hidden;
@@ -619,7 +642,7 @@ html, body{
     position: relative;
     border-radius: 3px;
     margin: 0 auto;
-    font-family: Raleway;
+    //font-family: Raleway;
     text-align: center;
     h3 {
         margin: 0;
@@ -691,7 +714,7 @@ html, body{
 }
 .horizontal-click > label {
   overflow: hidden;
-  font-family: Raleway;
+  //font-family: Raleway;
   font-size: 23px;
   display: block;
   padding: .5em 1em;
@@ -728,7 +751,7 @@ html, body{
 
 .licenceWrap{
     background-color: #f2f2f2;
-    font-family: Raleway;
+    //font-family: Raleway;
     font-size: 22px;
     text-align: center;
     overflow: hidden;
@@ -820,11 +843,12 @@ html, body{
         display: none;
         border: none;
         &:checked +label {
-            color: $primary-colorGreen;
-            border-bottom: 3px dashed $primary-colorGreen;
+            color: $primary-colorOrange2;
+            border-bottom: 3px dashed $primary-colorOrange2;
         }
     }
     label {
+        font-size: 20px;
         display: inline-block;
         margin: 0 0 -1px;
         padding: 15px 25px;
@@ -851,13 +875,19 @@ section {
     max-width: 1127px;
     margin: 0 auto 30px;
     overflow: hidden;
+    //font-family: Raleway;
+
     p{
         padding: 5px;
+        font-size: 22px;
         i{
             color: $primary-colorGreen;
             font-size: 20px;
             margin: 5px;
         }
+    }
+    .title{
+    font-size: 32px;
     }
 }
 
@@ -868,6 +898,74 @@ section {
 #tab2:checked ~ #content2 {
   display: block;
 }
+
+@media screen and (min-width: 1600px) {
+    .mainMenu{
+    font-size: 28px;
+    }
+    .title{
+    font-size: 40px;
+        &__description{
+            font-size: 28px;
+        }
+    }
+    p{
+        font-size: 28px;
+    }
+    #advantage{
+        max-width: 1600px;
+    }
+    .advantage {
+        max-width: 320px;
+        font-size: 16px;
+        min-height: 320px;
+        &__icon{
+            font-size: 60px;
+        }
+        &__title{
+            font-size: 22px;
+        }
+    }
+
+    .countsWrap__counts {
+        width: 230px;
+        height: 230px;
+        margin-left: 20px;
+    }
+
+    .services{
+        font-size: 30px;
+        max-width: 1050px;
+            &__item{
+                line-height: 40px;
+            }
+    }
+    .partnersModal{
+        max-width: 1400px;
+    }
+    .md-trigger{
+        max-width: 320px;
+        min-height: 320px;
+        i{
+            font-size: 60px;
+            margin: 35px 10px auto;
+        }
+        p{
+            font-size: 32px;
+        }
+    }
+    .news{
+        font-size: 30px;
+        &__item{
+                line-height: 40px;
+            }
+    }
+    .tabs label{
+        font-size: 22px;
+    }
+
+}
+
 
 @media screen and (max-width: 1450px) {
     .map {

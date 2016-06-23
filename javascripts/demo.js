@@ -55,7 +55,7 @@ $(document).ready(function(){
                   var floored_number = Math.floor(now),
                       target = $(tween.elem);
 
-                  target.text(floored_number + ' %');
+                  target.text(floored_number + '%');
                 }
               },
               1800

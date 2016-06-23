@@ -7,15 +7,15 @@
 
 @font-face{
     font-family: IntroCond; 
-    src: url(../fonts/IntroCond.otf); 
+    src: url(../fonts/GOTHIC.ttf); 
 }
  
 //$primary-colorGreen: #26AF76;
-$primary-colorGreen: #ffcc0d;
 
+$primary-colorGreen: #ffcc0d;
 $primary-colorOrange: #FF4301;
 $primary-colorOrange2:#FF5C01;
-$primary-colorGreen2:#FFD955;;
+$primary-colorGreen2:#FFD955;
 
 $fontColor: #000;
 
@@ -99,16 +99,13 @@ html, body{
         line-height: 30px;
         font-weight: normal;
     }
-    &_orange{
-        color: $primary-colorOrange;
-    }
 }
 
 
 
 
 #sectionDark{
-    //background-color: #333;
+    margin-top: 50px;
     min-height: 70px;
     text-align: center;
     border-top: 1px solid #d3d3d3;
@@ -183,9 +180,13 @@ html, body{
             text-decoration: none;
             &:hover{
                 //color: $primary-colorGreen;
-                border-bottom: 4px solid $primary-colorGreen;
+                //border-bottom: 4px solid $primary-colorGreen;
             }  
         }
+         &:hover{
+                //color: $primary-colorGreen;
+                border-bottom: 4px solid $primary-colorGreen;
+            } 
         
         &_white{
             color: white !important;
@@ -271,6 +272,7 @@ html, body{
     border-radius: 3px;
     transition:all 0.5s;
     visibility: hidden;
+    border-bottom: none;
     &:hover{    
         background-color: rgba(255, 255, 255, 0.8);
         color: rgba(17, 17, 17, 0.8);
@@ -333,13 +335,14 @@ html, body{
     min-height: 280px;
     &__icon{
         font-size: 50px;
-        color: $primary-colorGreen2;
+        color: rgba(255,204,13,0.5);
     }
     &__title{
         font-weight: 300;
         text-transform: uppercase;
         padding: 10px;
         margin-top: 15px;
+        font-family: IntroCond;
     }
     &__text{
         font-size: 19px;
@@ -381,6 +384,7 @@ html, body{
             text-indent: 0px !important;
             span{
                 font-size: 50px;
+                font-family: IntroCond; 
                 color: $primary-colorOrange2;
             }
         }
@@ -536,21 +540,23 @@ html, body{
     margin: 10px 40px;
     text-align: left;
     font-size: 18px;
+     overflow: auto;
+     max-height: 470px;
     &__item{
         line-height: 28px;
         list-style-type: circle;
-           i{
-        color: $primary-colorGreen;
-        margin-right: 10px;
+        i{
+            color: $primary-colorGreen;
+            margin-right: 10px;
+        }
     }
-    }
- 
 }
 
 .column{
     margin: 20px auto;
     width: 33%;
-    display: inline-table;
+    display: block;
+    float: left;
 }
 
 .md-trigger{
@@ -563,17 +569,23 @@ html, body{
     min-height: 250px;
     border-bottom: 1px solid #d3d3d3;
     cursor: pointer;
+    transition:all .3s ease-out;
     p{
-        font-size: 24px;
+        font-size: 20px;
         margin: 15px auto;
         padding: 15px;
+        font-family: IntroCond; 
+        text-transform: uppercase;
     }
     i{
-        margin:15px auto; 
-        color: $primary-colorGreen2;
-        font-size: 50px;
+        margin:30px 10px auto; 
+        color: rgba(255,204,13,0.5);
+        font-size: 60px;
+        transition:all .3s ease-out;
     }
-
+    &:hover{
+        background-color: rgba(255,204,13,0.1);
+    }
     &:hover >i {
         color: $primary-colorGreen;
     }
@@ -637,6 +649,7 @@ html, body{
 
 /* Content styles */
 .md-content {
+    max-height: 600px;
     color: #333;
     background: #f2f2f2;
     position: relative;
@@ -738,8 +751,9 @@ html, body{
   }
 }
 .horizontal-click > :checked + label + * {
+  //max-height: 400px;
+  height: 300px;
   overflow: auto;
-  height: 400px;
 }
 .horizontal-click > :checked + label {
   background: rgba(194,156,109,.2);
@@ -785,7 +799,7 @@ html, body{
         }
     }
     a{
-        color: $primary-colorGreen;
+        color: $primary-colorOrange2;
     }
     &:hover .caption {
          opacity: 1;
@@ -988,12 +1002,17 @@ section {
     .advantage__title {
         font-size: 14px;
     }
+    .advantage__text {
+        margin: auto;    
+    } 
 
 }
 
 
 @media screen and (max-width: 1060px) {
     .mainMenu__item {
+        margin: 10px 0;
+        padding: 10px 20px;
         a{
             font-size: 16px;    
         }       
@@ -1003,6 +1022,8 @@ section {
     }
 }
 
+
+
 @media screen and (max-width: 930px) {
     .my-col-sm {
        width: 50%;
@@ -1011,6 +1032,9 @@ section {
     .mainMenu__item_white {  
             font-weight: 100 !important;   
     }
+
+
+
     #advantage{
         width: 90%;
         margin: 0 auto;
@@ -1021,13 +1045,17 @@ section {
     .mainMenu__item {  
             margin: 0;  
     }
-}
-
-@media screen and (max-width: 910px) {
-    .column {  
+     .column {  
            width: 49%; 
     }
 }
+
+@media screen and (max-width: 890px) {
+    .mainMenu__item {  
+           padding: 10px 15px;  
+    }
+}
+
 
 /* TODO */
 
@@ -1151,12 +1179,16 @@ section {
     body { font-size: 75%; }
 }
 
-@media screen and (max-height:650px) and (max-width:500px){
+@media screen and (max-height:650px) {
    .partnersModal{
         display: none;
     }
     .partnersList{
         display: block;
+    }
+    .partners{
+        margin: 10px auto;
+        overflow: hidden;
     }
 }
 
@@ -1174,11 +1206,14 @@ path {
   stroke: url(#stripes);
   stroke-width: 15;
   stroke-dasharray: 0 550;
-  animation: dasharray 2s ease-out alternate;
+  animation: dasharray 3.5s ease-out alternate;
 animation-fill-mode:forwards;
   }
 
 @keyframes dasharray {
+    40% {
+    stroke-dasharray: 0 550;  
+  }
   100% {
     stroke-dasharray: 550 0;  
   }

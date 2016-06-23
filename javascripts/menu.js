@@ -13,12 +13,16 @@ $(document).ready(function(){
         
     $('a[href^="#"]').click(function(e){
 
+        var of = $(this).parent(".mainMenu__item").offset();
+        alert(of.left);
+        
         if($(this).attr('href')=="#img" || $(this).attr('href')=="#img1"){
             return;
         }
         //$(document).off("scroll");
-        $(menu_selector + " a.mainMenu__item_active").removeClass("mainMenu__item_active");
-        $(this).addClass("mainMenu__item_active");
+        $(menu_selector + " li.mainMenu__item_active").removeClass("mainMenu__item_active");
+        $(this).parent(".mainMenu__item").addClass("mainMenu__item_active");
+
         
         var el = $(this).attr('href');
         if(width>787)                                       //Смещение для обычного меню
@@ -71,8 +75,8 @@ $(document).ready(function(){
         var scroll = $(window).scrollTop();
         var id = $(el).attr('id');
         if( scroll > top && scroll < bottom){
-            $('a.mainMenu__item_active').removeClass('mainMenu__item_active');
-            $('a[href="#'+id+'"]').addClass('mainMenu__item_active');
+            $('li.mainMenu__item_active').removeClass('mainMenu__item_active');
+            $('a[href="#'+id+'"]').parent(".mainMenu__item").addClass('mainMenu__item_active');
             }
         })
         

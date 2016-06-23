@@ -7,7 +7,7 @@
 
 @font-face{
     font-family: IntroCond; 
-    src: url(../fonts/GOTHIC.ttf); 
+    src: url(../fonts/GOTHIC.TTF); 
 }
  
 //$primary-colorGreen: #26AF76;
@@ -36,9 +36,8 @@ html, body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #FFECDB url(../images/ball-triangle.svg) center center no-repeat;
-    background-size:106px;
-
+    background: #FFECDB url(../images/oval.svg) center center no-repeat;
+    background-size:41px;
 }
 
 
@@ -178,10 +177,7 @@ html, body{
             color: $fontColor;
             font-weight: 100;
             text-decoration: none;
-            &:hover{
-                //color: $primary-colorGreen;
-                //border-bottom: 4px solid $primary-colorGreen;
-            }  
+
         }
          &:hover{
                 //color: $primary-colorGreen;
@@ -191,6 +187,9 @@ html, body{
         &_white{
             color: white !important;
             font-weight: 600 !important;
+            &:hover{
+                //color: $primary-colorGreen !important;
+            }
              
         }
         &_active{
@@ -219,12 +218,7 @@ html, body{
             margin: 0;
             z-index: 11;
             }
-    }
-    &__active{
-        a{
-            color: $primary-colorGreen; 
-        }
-    }   
+    }  
 }
 
 
@@ -373,7 +367,7 @@ html, body{
     margin: 20px auto;
     overflow:hidden;
     &__counts{
-        border: 2px solid $primary-colorOrange2;
+        border: 2px solid rgba(255,204,13,0.5);
         border-radius: 50%;
         width: 180px;
         height: 180px;
@@ -385,7 +379,7 @@ html, body{
             span{
                 font-size: 50px;
                 font-family: IntroCond; 
-                color: $primary-colorOrange2;
+                color: $primary-colorGreen;
             }
         }
     }
@@ -503,7 +497,7 @@ html, body{
             color:$fontColor;
             text-decoration: none;
             &:hover {
-                color:$primary-colorOrange2;
+                color:$primary-colorGreen;
             }
         }
 
@@ -799,7 +793,7 @@ html, body{
         }
     }
     a{
-        color: $primary-colorOrange2;
+        color: $primary-colorGreen;
     }
     &:hover .caption {
          opacity: 1;
@@ -857,8 +851,8 @@ html, body{
         display: none;
         border: none;
         &:checked +label {
-            color: $primary-colorOrange2;
-            border-bottom: 3px dashed $primary-colorOrange2;
+            color: $primary-colorGreen;
+            border-bottom: 3px dashed $primary-colorGreen;
         }
     }
     label {

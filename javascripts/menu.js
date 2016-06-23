@@ -12,9 +12,6 @@ $(document).ready(function(){
 //===== плавный переход по ссылкам =====//
         
     $('a[href^="#"]').click(function(e){
-
-        var of = $(this).parent(".mainMenu__item").offset();
-        alert(of.left);
         
         if($(this).attr('href')=="#img" || $(this).attr('href')=="#img1"){
             return;

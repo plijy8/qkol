@@ -38,6 +38,7 @@ html, body{
     height: 100%;
     background: #FFECDB url(../images/oval.svg) center center no-repeat;
     background-size:41px;
+    
 }
 
 
@@ -909,7 +910,7 @@ section {
 
 @media screen and (min-width: 1600px) {
     .mainMenu{
-    font-size: 28px;
+    font-size: 26px;
     }
     .title{
     font-size: 40px;
@@ -959,7 +960,7 @@ section {
             margin: 35px 10px auto;
         }
         p{
-            font-size: 32px;
+            font-size: 26px;
         }
     }
     .news{
@@ -971,6 +972,10 @@ section {
     .tabs label{
         font-size: 22px;
     }
+    .partners__item {
+    line-height: 34px;
+    font-size: 26px;
+}
 
 }
 

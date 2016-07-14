@@ -43,7 +43,7 @@ html, body{
 
 
 .fullscr{
-    background-image: url(../images/factory2.jpeg);
+    background-image: url(../images/factory2-min.jpeg);
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
@@ -63,6 +63,7 @@ html, body{
         color: white;
         position: absolute;
         &_big{
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
             //display: none;
             font-size: 130px;
             padding: 15px;
@@ -288,6 +289,11 @@ html, body{
 	font-size: 22px;
 	text-align: justify;
     overflow: hidden;
+    .title{
+        p{
+            margin-left:- 40px;
+        }
+    }
 	p{
 		text-indent: 40px;
 	}
@@ -784,7 +790,7 @@ html, body{
         position: absolute;
         opacity: 0;
         top: 0px;
-        line-height: 400px;
+        //line-height: 400px;
         width: 100%;
         vertical-align: middle;
         transition: all .3s linear;
@@ -821,7 +827,10 @@ html, body{
     /** Pad the lightbox image */
     max-width: 90%;
     max-height: 80%;
-    margin-top: 2%;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .lightbox:target {

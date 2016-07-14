@@ -64,6 +64,10 @@ $(document).ready(function(){
         }
     });
 
+/*===== лайтбокс =====*/
+var hh = $('.effect img').height();
+$('.effect .caption').css({'line-height': hh+"px"}); 
+
 /*===== Прелоадер =====*/
 
 var hellopreloader = document.getElementById("hellopreloader_preload");
